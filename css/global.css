@@ -41,3 +41,7 @@ footer {
 img {
     margin: 1rem;
 }
+
+a {
+    text-decoration: none;
+}
