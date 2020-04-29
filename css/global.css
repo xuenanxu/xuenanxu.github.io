@@ -1,0 +1,43 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 16px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-icon {
+    width: 20px;
+    margin: 0.5rem;
+    display: inline-block;
+    background-size: cover;
+}
+
+.icon-ins {
+    background-image: url(../img/logo_ins.svg);
+
+}
+
+img {
+    margin: 1rem;
+}

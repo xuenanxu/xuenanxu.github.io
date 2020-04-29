@@ -1,0 +1,33 @@
+
+.h1, h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1rem;
+
+}
+
+.h2, h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.h3, h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p, p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.p--small {
+    font-size: 12p;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.text-light {
+    color: #868C97;
+}
