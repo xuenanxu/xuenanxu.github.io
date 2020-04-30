@@ -14,7 +14,8 @@
     margin: 20px 250px;
     height: 250px;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
+    border-radius: 3px;  
 }
 
 .work-container-left{
@@ -30,7 +31,7 @@
 .work-container:hover {
     box-shadow: 10px 10px 25px 10px #f2f2f2;
     cursor: pointer;
-    transition: ease-in 200ms;
+    transition: ease-in 300ms;
 }
 
 .work-container .h1 {
@@ -61,6 +62,8 @@
     background-image: url(../img/michigan_online_home.png)
 }
 
-.hideme {
+.fade {
     opacity: 0;
+    margin-top: 45px;
+    transition: ease-in;
 }
