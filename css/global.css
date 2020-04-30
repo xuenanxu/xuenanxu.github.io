@@ -1,3 +1,4 @@
+/* Navbar styling */
 #navbar {
     display: inline-flex;
     position: fixed;
@@ -10,6 +11,7 @@
     transition: top 0.3s;
     box-sizing: border-box;
     width: 100%;
+    background-color: white;
 }
 
 nav {
@@ -34,33 +36,46 @@ nav .active {
     color: #2c3440 !important;
 }
 
+/* Footer stlying */
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
-.social-icon {
-    width: 20px;
+.social-media a svg{
     margin: 0.5rem;
     display: inline-block;
-    background-size: cover;
-}
-
-.icon-ins {
-    background-image: url(../img/logo_ins.svg);
 
 }
 
-.icon-linkedin {
-    background-image: url(../img/logo_linkedin.svg)
+.social-media a svg #instagram-glyph-1:hover{
+    fill:#dd2a7b;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in-out 200ms;
 }
 
-.icon-dribbble {
-    background-image: url(../img/logo_dribbble.svg)
+.social-media a svg #linkedin-icon-1:hover {
+    fill: #0e76a8;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in-out 200ms;
 }
 
+.social-media a svg #dribbble-icon:hover {
+    fill: #ea4c89;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in-out 200ms;  
+}
+
+/* Element styling */
 img {
     margin: 1rem;
 }

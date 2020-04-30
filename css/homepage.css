@@ -60,3 +60,7 @@
 .michigan-online-home {
     background-image: url(../img/michigan_online_home.png)
 }
+
+.hideme {
+    opacity: 0;
+}
