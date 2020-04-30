@@ -22,8 +22,7 @@
 .p, p {
     font-size: 14px;
     font-weight: 400;
-    margin: 1rem;
-    color: #2C3440
+    color: #2C3440;
 }
 
 .p--small {
@@ -35,4 +34,8 @@
 
 .text-light {
     color: #868C97;
+}
+
+.text-white {
+    color:#EBEEF5
 }

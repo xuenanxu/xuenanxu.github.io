@@ -25,12 +25,12 @@
 </head>
 
 <body>
-    <div class="navigation">
+    <div id="navbar">
         <a href="index.html" class=h3>Xuenan Xu</a>
         <nav>
-            <li class="nav-item h3"> Work </li>
-            <li class="nav-item" h3> About </li>
-            <li class="nav-item" h3> Resume </li>
+            <a href="index.html" class="active"> Work </a>
+            <a> About </a>
+            <a> Resume </a>
         </nav>
     </div>
 
@@ -39,7 +39,47 @@
         <h2 class="h1">Hello there, this is Xuenan Xu</h2>
         <h3 class="h3 text-light">As a User Experience Designer, I aim at solving complex problems through concise designs</h3>
     </div>
-  
+
+    <div class="work">
+        <div class="work-container work-container-left goal-setter-home">
+            <h4 class="h1">Goal Setter</h4>
+            <p class="text-light"> Set up a goal for your online learning</p>
+        </div>
+
+        <div class="work-container work-container-right water-fortune-home">
+            <h4 class="h1 text-white">Water Fortune</h4>
+            <p class="text-light"> Set up a goal for your online learning</p>
+        </div>
+
+        <div class="work-container work-container-left data-ai-home">
+            <h4 class="h1">Data.AI</h4>
+            <p class="text-light"> Set up a goal for you online learning</p>
+        </div>
+
+        <div class="work-container work-container-right recommender-home">
+            <h4 class="h1 text-white">Recommender</h4>
+            <p class="text-light"> Set up a goal for your online learning</p>
+        </div>
+
+        <div class="work-container work-container-left michigan-online-home">
+            <h4 class="h1">Michigan Online</h4>
+            <p class="text-light"> Set up a goal for you online learning</p>
+        </div>
+    </div>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+</script>
+
 </body>
 
 <footer>

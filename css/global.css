@@ -1,10 +1,15 @@
-.navigation {
-    display: flex;
+#navbar {
+    display: inline-flex;
+    position: fixed;
+    top:0;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 20px 100px;
     align-items: center;
-    height: 80px;
+    height: 60px;
+    transition: top 0.3s;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 nav {
@@ -12,12 +17,21 @@ nav {
     flex-direction: row;
 }
 
-.nav-item {
-    list-style: none;
-    margin-left: 20px;
+nav a {
+    float: right;
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
     font-size: 16px;
-    color: #2C3440;
+    color: #868C97;
+}
 
+nav a:hover{
+    color: #2C3440;
+}
+
+nav .active {
+    color: #2c3440 !important;
 }
 
 footer {
@@ -37,6 +51,14 @@ footer {
 .icon-ins {
     background-image: url(../img/logo_ins.svg);
 
+}
+
+.icon-linkedin {
+    background-image: url(../img/logo_linkedin.svg)
+}
+
+.icon-dribbble {
+    background-image: url(../img/logo_dribbble.svg)
 }
 
 img {

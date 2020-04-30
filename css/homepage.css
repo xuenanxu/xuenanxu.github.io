@@ -1,10 +1,62 @@
-
-
 .home-header{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 0 100px;
-    margin: 50px 0;
+    margin: 100px 0 50px 0;
+}
+
+.work-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.work-container-left{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.work-container-right{
+    text-align: left;
+    padding-left: 600px;
+}
+
+.work-container:hover {
+    box-shadow: 10px 10px 25px 10px #f2f2f2;
+    cursor: pointer;
+    transition: ease-in 200ms;
+}
+
+.work-container .h1 {
+    line-height: 0;
+}
+
+.work-container p {
+    line-height: 0;
+}
+
+.goal-setter-home {
+    background-image: url(../img/goal_setter_home.png);
+}
+
+.water-fortune-home {
+    background-image: url(../img/water_fortune_home.png)
+}
+
+.data-ai-home {
+    background-image: url(../img/data_ai_home.png)
+}
+
+.recommender-home {
+    background-image: url(../img/recommender_home.png)
+}
+
+.michigan-online-home {
+    background-image: url(../img/michigan_online_home.png)
 }
