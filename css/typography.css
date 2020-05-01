@@ -8,27 +8,30 @@
 }
 
 .h2, h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    color: #2C3440
+    color: #2C3440;
+    margin-bottom: 1rem;
 }
 
 .h3, h3{
     font-size: 16px;
     font-weight: 400;
-    color: #2C3440
+    color: #2C3440;
+    margin-bottom: 1rem;
 }
 
 .p, p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     color: #2C3440;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .p--small {
-    font-size: 12p;
-    font-weight: 400;
-    margin: 1rem;
+    font-size: 14px;
+    font-weight: 300;
     color: #2C3440
 }
 
