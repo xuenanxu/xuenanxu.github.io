@@ -48,7 +48,7 @@
             <p class="text-light"> Set up a goal for your online learning</p>
         </div>
 
-        <div class="work-container work-container-right water-fortune-home">
+        <div class="work-container work-container-right water-fortune-home fade">
             <h4 class="h1 text-white">Water Fortune</h4>
             <p class="text-light"> Set up a goal for your online learning</p>
         </div>
@@ -96,7 +96,7 @@ $(document).ready(function() {
         /* Check the location of each desired element */
         $('.fade').each(function(i){
             
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_object = $(this).position().top + $(this).outerHeight() - 200;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it in */
