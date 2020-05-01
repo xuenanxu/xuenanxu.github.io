@@ -1,10 +1,17 @@
-.navigation {
-    display: flex;
+/* Navbar styling */
+#navbar {
+    display: inline-flex;
+    position: fixed;
+    top:0;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 20px 100px;
     align-items: center;
-    height: 80px;
+    height: 60px;
+    transition: top 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
 }
 
 nav {
@@ -12,32 +19,67 @@ nav {
     flex-direction: row;
 }
 
-.nav-item {
-    list-style: none;
-    margin-left: 20px;
+nav a {
+    float: right;
+    display: block;
+    text-decoration: none;
+    margin-left: 25px;
     font-size: 16px;
-
+    color: #868C97;
 }
 
+nav a:hover{
+    color: #2C3440;
+}
+
+nav .active {
+    color: #2c3440 !important;
+}
+
+/* Footer stlying */
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
-.social-icon {
-    width: 20px;
+.social-media a svg{
     margin: 0.5rem;
     display: inline-block;
-    background-size: cover;
-}
-
-.icon-ins {
-    background-image: url(../img/logo_ins.svg);
 
 }
 
+.social-media a svg #instagram-glyph-1:hover{
+    fill:#dd2a7b;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in 250ms;
+}
+
+.social-media a svg #linkedin-icon-1:hover {
+    fill: #0e76a8;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in 250ms;
+}
+
+.social-media a svg #dribbble-icon:hover {
+    fill: #ea4c89;
+    stroke-opacity: 0;
+    stroke: white;
+    stroke-width: 10px;
+    transition: fill ease-in 250ms;  
+}
+
+/* Element styling */
 img {
     margin: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
