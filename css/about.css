@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    padding: 50px 200px;
+    justify-content: space-between;
+}
+
+.intro {
+    width: 100%;
+}
+.profile {
+    width: 80%;
+    align-items: flex-end;
+}
