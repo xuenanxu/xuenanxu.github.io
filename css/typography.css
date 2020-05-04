@@ -16,9 +16,16 @@
 
 .h3, h3{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #2C3440;
     margin-bottom: 1rem;
+}
+
+.h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color:#868c97;
+    margin-bottom: 0.5rem;
 }
 
 .p, p {
@@ -33,6 +40,10 @@
     font-size: 14px;
     font-weight: 300;
     color: #2C3440
+}
+
+.p--indent {
+    text-indent: 2em;
 }
 
 .text-light {
