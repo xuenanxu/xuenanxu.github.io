@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="navbar-dark">
         <a href="index.html" class=h3>Xuenan Xu</a>
         <nav>
             <a href="index.html"> Work </a>
@@ -36,19 +36,38 @@
     </div>
 
     <div class="about">
-        <div class="intro">
-            <h2>About me.</h2>
-            <p>I'm Xuenan Xu, a User Experience Designer currently working at the Center for Academic Innovation (CAI), University of Michigan. My primary role at CAI is designing educational tools that serve the University of Michigan community for enhancing the learning and teaching experience of students and instructors.
-            <p>In May 2019, I graduated from the University of Michigan with a Master's Degree in User Experience Design and Research. Prior to this, I obtained my Bachelor's Degree in Information Management and Systems, during which I prepared myself with technical skills and the ability of critical thinking. I've also been an independent photographer for 6 years. Photography makes me a good observant with sharp perception, which I applied to my design process to uncover and anticipate users needs through my user-centered design. I hope to solve complex problems through concise designs.</p> 
-            <p>Outside of work, you are most likely to see me</p>
-            <p class="p--indent">• laughing, sweating, but most likely falling in the skateboard park 🛹.</p>
-            <p class="p--indent">• taking a walk with my cat 🐈 </p>
-            <p class="p--indent">• wandering around with my cameras</p>
-        </div>
         <div class="profile">
-            <img src="img/profile.jpg" class="profile" Alt="Profile Photo">
+            <img src="img/logo_dark.png" width="80">
+            <h2 class="h1">Hello there, this is Xuenan Xu</h2>
+        </div>
+        <div class="intro">
+            <div class="section">
+                <h2>👩🏻‍💻 Experience</h2>
+                <p>My career as a User Experience Designer started from my persuit of my Master's Degreen in User Exprience Design and Research at the University of Michigan in 2017. During my second year of study, I also worked as a part-time UX Design Intern at the Center for Academic Innovation of University of Michigan, which is a department designs and develops educational tools to enchance the learning and teaching experience of the entire U of M community and beyond. After graduation in May, 2019, with the passion of continue designing to bring impact into educational area, I accepted the offer from my office and started my full-time role as a User Experience Designer.</p> 
+                <p>While working at CAI, I not only applied the knowledge and skills of UX design and research that I obtained from school, I also expanded my skill sets into graphic design, branding, building design system and frontend implementation, which better prepared me to be a UX designer who also has the ability to adapt to different stages of different projects and collaborate with different roles in a cross-functionality team.</p>
+            </div>
+            <div class="section">
+                <h2>✨ Fun facts</h2>
+                <p> Outside of work, I'm a person who tries and enjoys different things by myself. One side of me enjoys skateboarding, walking with my cat and wandering around with my camera when it's nice and warm outside. The other side of me likes watching movies, embroidering, dying my hair and drawing at home. </p>
+             </div>
         </div>
     </div>
+
+    <script>
+        // Navbar animation
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar-dark").style.top = "0";
+        } else {
+            document.getElementById("navbar-dark").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    
+    </script>
+
 </body>
 <footer>
     <div class="social-media">
@@ -100,6 +119,6 @@
             </svg>
         </a>
     </div>
-    <p class="p--small text-light"> Design & Code by Xuenan Xu © 2020</p>
+    <p class="footer-dark p--small text-light"> Design & Code by Xuenan Xu © 2020</p>
 </footer>
 </html>
