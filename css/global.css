@@ -95,7 +95,7 @@ footer {
     stroke-opacity: 0;
     stroke: white;
     stroke-width: 10px;
-    transition: fill ease-in 250ms;
+    transition: fill ease-in 200ms;
 }
 
 .social-media a svg #linkedin-icon-1:hover {
@@ -103,7 +103,7 @@ footer {
     stroke-opacity: 0;
     stroke: white;
     stroke-width: 10px;
-    transition: fill ease-in 250ms;
+    transition: fill ease-in 200ms;
 }
 
 .social-media a svg #dribbble-icon:hover {
@@ -111,7 +111,7 @@ footer {
     stroke-opacity: 0;
     stroke: white;
     stroke-width: 10px;
-    transition: fill ease-in 250ms;  
+    transition: fill ease-in 200ms;  
 }
 
 /* Element styling */

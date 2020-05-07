@@ -1,3 +1,4 @@
+/* Project Header */
 .project-header-dark {
     background-color:#2C3440;
     height: 400px;
@@ -11,7 +12,8 @@
     flex-wrap: wrap;
 }
 
-.project-header-dark div{
+.project-header-dark div,
+.project-header-light div{
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -35,6 +37,39 @@
     height: auto;
     margin: auto 0;
 }
+
+.project-header-light {
+    background-color:#EBEEF5;
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    color:#2C3440
+}
+
+.project-header-light h1{
+    color: #2C3440;
+    margin-bottom: 0.5em;
+
+}
+
+.project-header-light .p--small {
+    margin-bottom: 1.5em;
+
+}
+
+.project-header-light img {
+    width: 400px;
+    height: auto;
+    margin: auto 0;
+}
+
+/* Stripes and sections */
 
 .stripe-white {
     background-color: white;
@@ -68,6 +103,14 @@
 .two-columns img {
     width: 47%;
     margin: 0;
+}
+
+.overview-mobile img {
+    width:350px;
+}
+
+.overview-mobile {
+    align-items: center;
 }
 
 .three-columns div {
