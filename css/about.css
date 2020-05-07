@@ -1,0 +1,43 @@
+.about {
+    padding:0 200px;
+}
+
+.intro {
+    width: 100%;
+}
+
+.profile .h1 {
+    text-align: center;
+    color: white;
+    margin: 1.2em;
+}
+
+.intro .social-media {
+    margin: 8px;
+    text-align: center;
+
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+    margin: 100px 0 50px 0;
+}
+
+body {
+    background-color: #2C3440;
+}
+
+p {
+    color: #f7f7f7;
+}
+
+h2 {
+    color: #f7f7f7;
+}
+
+.section {
+    margin-top: 30px;
+}

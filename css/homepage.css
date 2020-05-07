@@ -7,25 +7,32 @@
     margin: 100px 0 50px 0;
 }
 
+.home-header .h1 {
+    margin: 1.2em;
+}
 .work-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 250px;
-    height: 250px;
+    margin: 30px 200px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 3px;  
 }
 
+.work-container .h1{
+    margin-bottom: 1.5em;
+}
+
 .work-container-left{
     text-align: left;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .work-container-right{
     text-align: left;
-    padding-left: 600px;
+    padding-left: 650px;
 }
 
 .work-container:hover {
@@ -64,6 +71,6 @@
 
 .fade {
     opacity: 0;
-    margin-top: 45px;
+    margin-top: 50px;
     transition: ease-in;
 }

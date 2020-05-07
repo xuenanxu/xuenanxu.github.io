@@ -1,0 +1,138 @@
+/* Project Header */
+.project-header-dark {
+    background-color:#2C3440;
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.project-header-dark div,
+.project-header-light div{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.project-header-dark h1{
+    color: white;
+    margin-bottom: 0.5em;
+
+}
+
+.project-header-dark .p--small {
+    margin-bottom: 1.5em;
+
+}
+
+.project-header-dark img {
+    width: 400px;
+    height: auto;
+    margin: auto 0;
+}
+
+.project-header-light {
+    background-color:#EBEEF5;
+    height: 400px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    color:#2C3440
+}
+
+.project-header-light h1{
+    color: #2C3440;
+    margin-bottom: 0.5em;
+
+}
+
+.project-header-light .p--small {
+    margin-bottom: 1.5em;
+
+}
+
+.project-header-light img {
+    width: 400px;
+    height: auto;
+    margin: auto 0;
+}
+
+/* Stripes and sections */
+
+.stripe-white {
+    background-color: white;
+    padding: 30px 200px
+}
+
+.stripe-dark {
+    background-color: #2C3440;
+    padding: 30px 200px;
+}
+
+.stripe-gray {
+    background-color: #fafafa;
+    padding: 30px 200px;
+}
+
+.two-columns, .three-columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.two-columns div {
+    width: 40%;
+}
+
+.overview img {
+    width: 400px;
+}
+
+.two-columns img {
+    width: 47%;
+    margin: 0;
+}
+
+.overview-mobile img {
+    width:350px;
+}
+
+.overview-mobile {
+    align-items: center;
+}
+
+.three-columns div {
+    width: 30%;
+    text-align: center;
+}
+
+.three-columns img {
+    margin: 0;
+    width: 100%;
+}
+
+.section {
+    margin: 60px 0;
+}
+
+.one-column img{
+    width: 100%;
+    margin: 0;
+}
+
+.section .icon {
+    width: 60px;
+    margin: 10px 0;
+}
