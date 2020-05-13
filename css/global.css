@@ -2,6 +2,8 @@
     margin:0;
     padding: 0;
 }
+
+
 /* Navbar styling */
 #navbar {
     display: inline-flex;
@@ -122,3 +124,36 @@ img {
 a {
     text-decoration: none;
 }
+
+/* Animations */
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+  }
+  
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
+  .fade-out {
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+  }
+  
