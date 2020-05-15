@@ -1,5 +1,4 @@
     //Back to top button and sidenav
-    //Get the button
     var mybutton = document.getElementById("myBtn");
     var sideNav = document.getElementById("sidenav");
     var prevScrollpos = window.pageYOffset;
