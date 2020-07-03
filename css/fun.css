@@ -1,23 +1,72 @@
-.photography{
-    margin: 150px 0 50px 0;
+.photo-header-container{
     display: flex;
+    width: 30%;
     flex-direction: column;
-    padding: 0 200px;
+    align-items: flex-start;
+    text-align: left;
+    margin: 200px auto 100px auto;
 }
 
-.gallery{
-    padding: 0;
-    align-items: center;
+.typewriter { 
+    overflow: hidden;
+    padding-right: 5px;
+    border-right: 1px solid #363B3F;
+    white-space: nowrap; 
+    animation: 
+        typing 3s steps(40, end),
+        blink-caret .6s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 28% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #363B3F; }
+  }
 
-.gallery img {
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    margin: 150px 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.photo-container .photo-intro{
+    width: 80%;
+}
+
+.photo-container .photo-image{
+    margin-left: 14%;
+}
+.photo-container .photo-image img{
     width: 100%;
-    margin-left:0;
-    margin-right: 0;
+    margin: 0;
 }
 
-.fade {
-    margin-top: 40px;
-    transition: ease-in;
+.photo-container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 150px 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.photo-container-reverse .photo-intro{
+    width: 80%;
+}
+
+.photo-container-reverse .photo-image{
+    margin-right: 14%;
+}
+.photo-container-reverse .photo-image img{
+    width: 100%;
+    margin: 0;
 }

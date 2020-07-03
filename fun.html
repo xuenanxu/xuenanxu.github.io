@@ -14,106 +14,142 @@
   <link rel="stylesheet" href="css/fun.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/global.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <style>
-      body{
-          font-family: 'Poppins', sans-serif;
-          
-      }
-  </style>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">Top</button>
     <div id="navbar">
-        <a href="index.html" class=h3>Xuenan Xu</a>
+        <a href="index.html" class=h2>Xuenan Xu</a>
         <nav>
-            <a href="index.html"> Work </a>
-            <a class="active"> Fun </a>
+            <a href="index.html"> UX/UI </a>
+            <a class="active"> Photography </a>
             <a href="about.html"> About </a>
-            <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
         </nav>
     </div>
 
-    <div class="photography">
-        <h2>📸 Photography</h2>
-        <p>Starting from my freshman year in college, I've been doing photography for 6 years. I started with the single-lense reflex camera as many other photographers do. I enjoyed the adventure of chasing after the sunset, sitting in the starry nights or climbing up to the the roof of buildings with my camera at the beginning, but am more obsessed with using my pocket camera, iPhone or film camera to take photos of my life now. </p>
-        <p>Photography is my own way of observing, perceiving and feeling this world.</p>
-        <div class="gallery">
+    <div data-aos="fade-in" data-aos-duration="1000"class="photo-header-container">
+        <h2 class="h3">About photography</h2>
+        <h3 class="h2 regular">Having been doing photography for 6 years, photography for me is more than recording the fleeting moments of life, but my way of observing and perceiving the world.</h3>
+    </div>
 
-            <img src="/media/d3.JPG">
-            <img src="/media/d4.JPG" class="fade">
-            <img src="/media/d8.JPG" class="fade">
-            <img src="/media/d1.JPG" class="fade">
-            <img src="/media/d2.JPG" class="fade">
-            <img src="/media/d5.JPG" class="fade">
-
-            <img src="/media/f1.JPG" class="fade">
-            <img src="/media/f5.JPG" class="fade">
-            <img src="/media/f7.JPG" class="fade">
-            <img src="/media/f2.JPG" class="fade">
-            <img src="/media/f3.JPG" class="fade">
-            <img src="/media/f4.JPG" class="fade">
-
-
+    <div class="photo-container">
+        <div class="photo-intro">
+            <h4 class="h3">Halfmoon Bay, CA | 2019</h4>
+            <p class="p--small text-light">by Ricoh GR II</p>
         </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/d3.jpg">
+        </div>    
+    </div>
 
-        <script>
-            // Navbar animation
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-80px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-        
-        </script>
+
+    <div class="photo-container-reverse">
+        <div class="photo-intro">
+            <h4 class="h3">Ann Arbor, MI | 2020</h4>
+            <p class="p--small text-light">by Ricoh GR II</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/d4.jpg">
+        </div>    
+    </div>
+
+
+    <div class="photo-container">
+        <div class="photo-intro">
+            <h4 class="h3">Ali Mountain, Taiwan | 2017</h4>
+            <p class="p--small text-light">by Ricoh GR II</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/d8.jpg">
+        </div>    
+    </div>
+
+    <div class="photo-container-reverse">
+        <div class="photo-intro">
+            <h4 class="h3">Ann Arbor, MI | 2018</h4>
+            <p class="p--small text-light">by iPhone 7</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/d2.jpg">
+        </div>    
+    </div>
+
+
+    <div class="photo-container">
+        <div class="photo-intro">
+            <h4 class="h3">Eagle Harbor, MI | 2018</h4>
+            <p class="p--small text-light">by Ricoh GR II</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/d1.jpg">
+        </div>    
+    </div>
+
+
+    <div class="photo-container-reverse">
+        <div class="photo-intro">
+            <h4 class="h3">Ann Arbor, MI | 2017</h4>
+            <p class="p--small text-light">by Minolta X700, Fuji C200</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/f1.jpg">
+        </div>    
+    </div>
+
+    <div class="photo-container">
+        <div class="photo-intro">
+            <h4 class="h3">Hefei, China | 2015</h4>
+            <p class="p--small text-light">by Minolta X700, Fuji C200</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/f7.jpg">
+        </div>    
+    </div>
+
+    <div class="photo-container-reverse">
+        <div class="photo-intro">
+            <h4 class="h3">Hanover, NH | 2017</h4>
+            <p class="p--small text-light">by Minolta X700, Fuji C200</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600" class="photo-image">
+            <img src="/media/f2.jpg">
+        </div>    
+    </div>
 
 <script>
+    // Navbar animation
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
-    /* FadeIn Scroll */
-    $(document).ready(function() {
-        
-        /* Every time the window is scrolled ... */
-        $(window).scroll(function(){
-        
-            /* Check the location of each desired element */
-            $('.fade').each(function(i){
-                
-                var bottom_of_object = $(this).position().top + $(this).outerHeight() - 400;
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                
-                /* If the object is completely visible in the window, fade it in */
-                if( bottom_of_window > bottom_of_object ){
-                    
-                    $(this).animate({'opacity':'1', 'margin-top':'10px'},800);
-                        
-                }
-                
-            }); 
-        
-        });
-        
-    });
-    </script>
+</script>
+
+<!-- Work container animation -->
+<script>
+    AOS.init();
+</script>
+
 </body>
 
 <footer>
     <div class="social-media">
         <a href="https://www.instagram.com/xuenanx/" target="_blank">
-            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
             <title>Shape</title>
             <desc>Created with Sketch.</desc>
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Landing" transform="translate(-487.000000, -1620.000000)" fill="#868C97" fill-rule="nonzero">
+                <g id="Landing" transform="translate(-487.000000, -1620.000000)" fill="#677581" fill-rule="nonzero">
                     <g id="Footer" transform="translate(406.000000, 1620.000000)">
                         <g id="instagram-glyph-1" transform="translate(81.000000, 0.000000)">
                             <path d="M3.33373723,5 C3.33373723,4.07956381 4.07972858,3.33319871 5.00020195,3.33319871 C5.92067531,3.33319871 6.66707056,4.07956381 6.66707056,5 C6.66707056,5.92043619 5.92067531,6.66680129 5.00020195,6.66680129 C4.07972858,6.66680129 3.33373723,5.92043619 3.33373723,5 M2.43265075,5 C2.43265075,6.41801292 3.58213175,7.5674475 5.00020195,7.5674475 C6.41827214,7.5674475 7.56775314,6.41801292 7.56775314,5 C7.56775314,3.58198708 6.41827214,2.4325525 5.00020195,2.4325525 C3.58213175,2.4325525 2.43265075,3.58198708 2.43265075,5 M7.06934852,2.33077544 C7.06934852,2.66195477 7.33793772,2.930937 7.66953431,2.930937 C8.00072701,2.930937 8.2697201,2.66195477 8.2697201,2.33077544 C8.2697201,1.99959612 8.0011309,1.73101777 7.66953431,1.73101777 C7.33793772,1.73101777 7.06934852,1.99959612 7.06934852,2.33077544 M2.97992649,9.06987076 C2.492427,9.04765751 2.22747284,8.96647819 2.05137526,8.89781906 C1.8179248,8.80694669 1.65152066,8.69870759 1.47623087,8.52382876 C1.30134497,8.34894992 1.1926976,8.1825525 1.10222545,7.94911147 C1.03356355,7.773021 0.952380952,7.50807754 0.930166808,7.02059774 C0.905933196,6.49353796 0.901086474,6.33521809 0.901086474,5 C0.901086474,3.66478191 0.90633709,3.50686591 0.930166808,2.97940226 C0.952380952,2.49192246 1.03396745,2.22738288 1.10222545,2.05088853 C1.1931015,1.8174475 1.30134497,1.65105008 1.47623087,1.47576737 C1.65111677,1.30088853 1.8175209,1.19224556 2.05137526,1.10177706 C2.22747284,1.03311793 2.492427,0.951938611 2.97992649,0.929725363 C3.50700755,0.90549273 3.66533382,0.900646204 5.00020195,0.900646204 C6.33547397,0.900646204 6.49339634,0.905896607 7.0208813,0.929725363 C7.50838079,0.951938611 7.77293106,1.03352181 7.94943253,1.10177706 C8.18288299,1.19224556 8.34928713,1.30088853 8.52457692,1.47576737 C8.69946282,1.6506462 8.80770629,1.8174475 8.89858233,2.05088853 C8.96724423,2.226979 9.04842683,2.49192246 9.07064098,2.97940226 C9.09487459,3.50686591 9.09972131,3.66478191 9.09972131,5 C9.09972131,6.33481422 9.09487459,6.49313409 9.07064098,7.02059774 C9.04842683,7.50807754 8.96684034,7.773021 8.89858233,7.94911147 C8.80770629,8.1825525 8.69946282,8.34894992 8.52457692,8.52382876 C8.34969102,8.69870759 8.18288299,8.80694669 7.94943253,8.89781906 C7.77333495,8.96647819 7.50838079,9.04765751 7.0208813,9.06987076 C6.49380023,9.09410339 6.33547397,9.09894992 5.00020195,9.09894992 C3.66533382,9.09894992 3.50700755,9.09410339 2.97992649,9.06987076 M2.93872935,0.0302907916 C2.40639767,0.0545234249 2.04289349,0.138933764 1.72502928,0.262520194 C1.39625995,0.390145396 1.11757341,0.561389338 0.839290763,0.839256866 C0.561412012,1.11712439 0.390161154,1.39579968 0.262530797,1.72495961 C0.138939376,2.04281099 0.054525627,2.40630048 0.030292015,2.93861066 C0.00565450947,3.47172859 0,3.64216478 0,5 C0,6.35783522 0.00565450947,6.52827141 0.030292015,7.06138934 C0.054525627,7.59369952 0.138939376,7.95718901 0.262530797,8.27504039 C0.390161154,8.60379645 0.561008118,8.88287561 0.839290763,9.16074313 C1.11716951,9.43861066 1.39585605,9.60945073 1.72502928,9.73747981 C2.04329739,9.86106624 2.40639767,9.94547658 2.93872935,9.96970921 C3.47227271,9.99394184 3.64231189,10 5.00020195,10 C6.3584959,10 6.52853508,9.99434572 7.06167454,9.96970921 C7.59400622,9.94547658 7.9575104,9.86106624 8.27537461,9.73747981 C8.60414395,9.60945073 8.88283049,9.43861066 9.16111313,9.16074313 C9.43899188,8.88287561 9.60983885,8.60379645 9.7378731,8.27504039 C9.86146452,7.95718901 9.94628216,7.59369952 9.97011188,7.06138934 C9.99434549,6.52786753 10,6.35783522 10,5 C10,3.64216478 9.99434549,3.47172859 9.97011188,2.93861066 C9.94587827,2.40630048 9.86146452,2.04281099 9.7378731,1.72495961 C9.60983885,1.39620355 9.43899188,1.11752827 9.16111313,0.839256866 C8.88323438,0.561389338 8.60414395,0.390145396 8.2757785,0.262520194 C7.9575104,0.138933764 7.59400622,0.0541195477 7.06207844,0.0302907916 C6.52893897,0.00605815832 6.3584959,0 5.00060584,0 C3.64231189,0 3.47227271,0.0056542811 2.93872935,0.0302907916" id="Shape"></path>
@@ -124,12 +160,12 @@
         </svg> 
     </a>
         <a href="https://www.linkedin.com/in/xuenan-xu-a4999299/" target="_blank">
-            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
                 <title>Shape</title>
                 <desc>Created with Sketch.</desc>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Landing" transform="translate(-507.000000, -1620.000000)" fill="#868C97" fill-rule="nonzero">
+                    <g id="Landing" transform="translate(-507.000000, -1620.000000)" fill="#677581" fill-rule="nonzero">
                         <g id="Footer" transform="translate(406.000000, 1620.000000)">
                             <g id="linkedin-icon-1" transform="translate(101.000000, 0.000000)">
                                 <path d="M0,1.11003861 C0,0.788281853 0.11261583,0.522837838 0.337837838,0.313706564 C0.563059846,0.104565637 0.855859073,0 1.21621622,0 C1.57014479,0 1.85649614,0.102953668 2.07528958,0.308880309 C2.30051158,0.521235521 2.41312741,0.797934363 2.41312741,1.13899614 C2.41312741,1.44787645 2.30373552,1.70527027 2.08494208,1.91119691 C1.85972008,2.12355212 1.56370656,2.22972973 1.1969112,2.22972973 L1.18725869,2.22972973 C0.833330116,2.22972973 0.546978764,2.12355212 0.328185328,1.91119691 C0.109391892,1.6988417 0,1.43178571 0,1.11003861 Z M0.125482625,9.55598456 L0.125482625,3.10810811 L2.26833977,3.10810811 L2.26833977,9.55598456 L0.125482625,9.55598456 Z M3.45559846,9.55598456 L5.5984556,9.55598456 L5.5984556,5.95559846 C5.5984556,5.7303668 5.62419884,5.55662162 5.67567568,5.43436293 C5.76576255,5.2155695 5.90250965,5.03055985 6.08590734,4.87934363 C6.26930502,4.72811776 6.49935328,4.65250965 6.77606178,4.65250965 C7.49678571,4.65250965 7.85714286,5.13834942 7.85714286,6.11003861 L7.85714286,9.55598456 L10,9.55598456 L10,5.85907336 C10,4.90668919 9.77477799,4.18436293 9.32432432,3.69208494 C8.87387066,3.19980695 8.278639,2.95366795 7.53861004,2.95366795 C6.70849421,2.95366795 6.06177606,3.31081081 5.5984556,4.02509653 L5.5984556,4.04440154 L5.58880309,4.04440154 L5.5984556,4.02509653 L5.5984556,3.10810811 L3.45559846,3.10810811 C3.46846525,3.3140251 3.47490347,3.95430502 3.47490347,5.02895753 C3.47490347,6.10360039 3.46846525,7.61260618 3.45559846,9.55598456 Z" id="Shape"></path>
@@ -139,12 +175,12 @@
                 </g>
             </svg></a>
         <a href="https://dribbble.com/xuenanxu" target="_blank">
-            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
                 <title>Shape</title>
                 <desc>Created with Sketch.</desc>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Landing" transform="translate(-527.000000, -1620.000000)" fill="#868C97" fill-rule="nonzero">
+                    <g id="Landing" transform="translate(-527.000000, -1620.000000)" fill="#677581" fill-rule="nonzero">
                         <g id="Footer" transform="translate(406.000000, 1620.000000)">
                             <g id="dribbble-icon" transform="translate(121.000000, 0.000000)">
                                 <path d="M0,5 C0,4.09333 0.22334,3.25667 0.67,2.49 C1.11667,1.72333 1.72334,1.11667 2.49,0.67 C3.25667,0.22333 4.09334,0 5,0 C5.90667,0 6.74334,0.22333 7.51,0.67 C8.27667,1.11667 8.88334,1.72333 9.33,2.49 C9.77667,3.25667 10,4.09333 10,5 C10,5.90667 9.77667,6.74333 9.33,7.51 C8.88334,8.27667 8.27667,8.88333 7.51,9.33 C6.74334,9.77667 5.90667,10 5,10 C4.09334,10 3.25667,9.77667 2.49,9.33 C1.72334,8.88333 1.11667,8.27667 0.67,7.51 C0.22334,6.74333 0,5.90667 0,5 Z M0.83,5 C0.83,6.04 1.18,6.95667 1.88,7.75 C2.2,7.12333 2.70667,6.52667 3.4,5.96 C4.09334,5.39333 4.77,5.03667 5.43,4.89 C5.33,4.65667 5.23334,4.44667 5.14,4.26 C3.99334,4.62667 2.75334,4.81 1.42,4.81 C1.16,4.81 0.96667,4.80667 0.84,4.8 C0.84,4.82667 0.83834,4.86 0.835,4.9 C0.83167,4.94 0.83,4.97333 0.83,5 Z M0.96,3.97 C1.10667,3.98333 1.32334,3.99 1.61,3.99 C2.72334,3.99 3.78,3.84 4.78,3.54 C4.27334,2.64 3.71667,1.89 3.11,1.29 C2.58334,1.55667 2.13167,1.92667 1.755,2.4 C1.37834,2.87333 1.11334,3.39667 0.96,3.97 Z M2.45,8.29 C3.20334,8.87667 4.05334,9.17 5,9.17 C5.49334,9.17 5.98334,9.07667 6.47,8.89 C6.33667,7.75 6.07667,6.64667 5.69,5.58 C5.07667,5.71333 4.45834,6.05 3.835,6.59 C3.21167,7.13 2.75,7.69667 2.45,8.29 Z M3.98,0.97 C4.56667,1.57667 5.11,2.33333 5.61,3.24 C6.51667,2.86 7.2,2.37667 7.66,1.79 C6.88667,1.15 6,0.83 5,0.83 C4.66,0.83 4.32,0.87667 3.98,0.97 Z M5.97,3.95 C6.07,4.16333 6.18334,4.43333 6.31,4.76 C6.80334,4.71333 7.34,4.69 7.92,4.69 C8.33334,4.69 8.74334,4.7 9.15,4.72 C9.09667,3.81333 8.77,3.00667 8.17,2.3 C7.73667,2.94667 7.00334,3.49667 5.97,3.95 Z M6.56,5.46 C6.9,6.44667 7.13,7.46 7.25,8.5 C7.77667,8.16 8.20667,7.72333 8.54,7.19 C8.87334,6.65667 9.07334,6.08 9.14,5.46 C8.65334,5.42667 8.21,5.41 7.81,5.41 C7.44334,5.41 7.02667,5.42667 6.56,5.46 Z" id="Shape"></path>
@@ -155,6 +191,6 @@
             </svg>
         </a>
     </div>
-    <p class="p--small text-light"> Design & Code by Xuenan Xu © 2020</p>
+    <p class="text-light"> Design & Code by Xuenan Xu © 2020</p>
 </footer>
 </html>

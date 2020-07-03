@@ -1,43 +1,60 @@
-.about {
-    padding:0 200px;
-}
-
-.intro {
-    width: 100%;
-}
-
-.profile .h1 {
-    text-align: center;
-    color: white;
-    margin: 1.2em;
-}
-
-.intro .social-media {
-    margin: 8px;
-    text-align: center;
-
-}
-.profile {
+.self-intro-container {
     display: flex;
+    flex-direction: row-reverse;
+    margin: 150px 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.self-intro-container .self-intro-intro{
+    width: 80%;
+}
+
+.self-intro-container .self-intro-image{
+    margin-right: 14%;
+}
+.self-intro-container .self-intro-image img{
+    width: 100%;
+    margin: 0;
+}
+
+.about-header-container{
+    display: flex;
+    width: 50%;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 100px;
-    margin: 100px 0 50px 0;
+    align-items: flex-start;
+    text-align: left;
+    margin: 200px auto 100px auto;
 }
 
-body {
-    background-color: #2C3440;
+.self-intro-container-reverse {
+    display: flex;
+    flex-direction: row;
+    margin: 150px 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
 }
 
-p {
-    color: #f7f7f7;
+.self-intro-container-reverse .self-intro-intro{
+    width: 80%;
 }
 
-h2 {
-    color: #f7f7f7;
+.self-intro-container-reverse .self-intro-image{
+    margin-left: 14%;
+}
+.self-intro-container-reverse .self-intro-image img{
+    width: 100%;
+    margin: 0;
 }
 
-.section {
-    margin-top: 30px;
+.about-header-container-reverse{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 200px auto 100px auto;
 }
+

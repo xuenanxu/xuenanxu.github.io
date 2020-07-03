@@ -1,45 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&display=swap');
+
+body {
+    font-family: "Saira Condensed", sans-serif;
+}
 
 .h1, h1 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1rem;
-    color: #2C3440
+    color: #363B3F;
+
 
 }
 
 .h2, h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    color: #2C3440;
+    color: #363B3F;
     margin-bottom: 1rem;
 }
 
 .h3, h3{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    color: #2C3440;
+    color: #363B3F;
     margin-bottom: 1rem;
 }
 
 .h4 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    color:#868c97;
+    color:#677581;
     margin-bottom: 0.5rem;
 }
 
 .p, p {
-    font-size: 16px;
-    font-weight: 300;
-    color: #2C3440;
+    font-size: 18px;
+    font-weight: 400;
+    color: #363B3F;
     line-height: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .p--small {
     font-size: 14px;
-    font-weight: 300;
-    color: #2C3440
+    font-weight: 400;
+    color: #363B3F
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.regular {
+    font-weight: 400;
 }
 
 .p--indent {
@@ -47,7 +61,7 @@
 }
 
 .text-light {
-    color: #868C97;
+    color: #677581;
 }
 
 .text-white {

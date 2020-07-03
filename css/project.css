@@ -29,7 +29,7 @@
 }
 
 .sidenav ul li a:hover{
-	color: #868C97;
+	color: #677581;
 }
 
 .sidenav ul li a,
@@ -40,7 +40,7 @@
 
 /* Project Header */
 .project-header-dark {
-    background-color:#2C3440;
+    background-color:#363B3F;
     height: 400px;
     margin-top: 60px;
     display: flex;
@@ -89,11 +89,11 @@
     padding-right: 200px;
     align-items: flex-end;
     flex-wrap: wrap;
-    color:#2C3440
+    color:#363B3F
 }
 
 .project-header-light h1{
-    color: #2C3440;
+    color: #363B3F;
     margin-bottom: 0.5em;
 
 }
@@ -117,7 +117,7 @@
 }
 
 .stripe-dark {
-    background-color: #2C3440;
+    background-color: #363B3F;
     padding: 30px 200px;
 }
 
