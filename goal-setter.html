@@ -49,8 +49,8 @@
                 
                 // This is the bit of code that uses the currentSection as its source of ID
                 var id = $currentSection.attr('id');
-                $('a').removeClass('active');
-                $("[href=#"+id+"]").addClass('active');
+                $('a').removeClass('side-active');
+                $("[href=#"+id+"]").addClass('side-active');
                 
             })
         
@@ -60,7 +60,7 @@
 
   <style>
       body{
-          font-family: 'Poppins', sans-serif;         
+          font-family: 'Inter', sans-serif;         
       }
   </style>
 </head>
@@ -68,379 +68,417 @@
 <body>
     <nav id="sidenav" class="sidenav fade-in">
         <ul>
-            <li><a href="#overview">Project Overview</a></li>
-            <li><a href="#research">Research and Ideation</a></li>
-            <li><a href="#design">Design and Iteration</a></li>
-            <li><a href="#demo">Tool Demo</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#ideation">Ideation</a></li>
+            <li><a href="#design">Design</a></li>
         </ul>
     </nav>
 
-    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">☝🏻</button>
+    
 
-    <div id="navbar">
-        <a href="index.html" class="h3">Xuenan Xu</a>
-        <nav>
-            <a href="index.html" class="active"> Work </a>
-            <a href="fun.html"> Fun </a>
-            <a href="about.html"> About </a>
-            <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
-        </nav>
+   <div id="navbar">
+            <a href="index.html" class="h3">Xuenan Xu</a>
+            <nav>
+                <a href="index.html" class="active"> Work </a>
+                <a href="fun.html"> Fun </a>
+                <a href="about.html"> About </a>
+                <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
+            </nav>
     </div>
 
-    <div class="project-header-dark">
-        <div>
-            <h1 class="text-white"> Goal Setter</h1>
-            <p class="text-light p--small">UX Design & Research, Frontend Development</p>
-            <p class="text-white">A web application designed to enhance online learning experience by helping online learners setting up a goal at the beginning of taking a course.</p>
-        </div>
-        <img src="img/goal_setter_cover.png">
+
+
+    <div class="project-header">
+        <div class="project-header-intro">
+            <h1> Goal Setter</h1>
+            <p>Movitate online learners by helping them set up a goal at the beginning of taking a MOOC.</p>
+
+            <div class="project-header-role">
+                <hr class='project-header-divider'>
+                 <p class="text-light">UX Design & Research, Frontend Development</p>
+            </div>
+        </div>         
+            <img class="project-header-image" src="img/image-header-goal-setter.png">
     </div>
 
-    <div id="overview" class="container">
-    <div class="stripe-gray">
-        <div class="section two-columns">
-            <div>
-                <h3 class="text-light">👩🏻‍💻 Responsibilities Highlight</h3>
-                <p>UX Research, Ideation, Wireframing, Prototyping, Building design system, Conducting usability test, Frontend implementation</p>
-            </div>
-            <div>
-                <h3 class="text-light">🛠️ Tool/Language</h3>
-                <p>Sketch & Invision for prototyping</p>
-                <p> HTML & SCSS for frontend implementation</p>
-            </div>    
-        </div>
-        <div class="section  one-column">
-            <h3 class="text-light">🗓️ Project Timeline</h3>
-            <img src="img/placeholder_1.png">
-        </div>
-    </div>
+    <div class="project-content-container">
 
-    <div class="stripe-white">
-        <div class="section">
-            <h2>Background</h2>
-            <p>With 101 million enrollments in 2018, massive open online courses (MOOCs) have drastically increased access to online learning resources. However, many challenges still exist in the MOOC space, such as high attrition rates and a sense of electronic isolation.To address these problems, we designed and developed a goal-setting web application with the following objectives:</p>
+        <!-- Overview -->
+        <div id="overview" class="container">
+        <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">INTRODUCTION</h2> 
+                 <h1>Overview</h1>
+            </div>
+           <p class="section-intro_content">Goal Setter is a third-part online tool that is plugged into our partner platforms such like Coursera, edX and FutureLearn. The tool allows learners to set up a goal at the beginning of an online course to improve the issue of high attrition rates and learners' sense of isolation in the online learning experience. Along our research and design process, we also wrote a case study of "Creating and Evaluating a Goal Setting Prototype for MOOCs", which is accepted by CHI 2020 Conference.</p>
         </div>
-        <div class="section three-columns">
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">To increase learners' awareness of their desired outcomes and motivation to engage</p>
-            </div>
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">To provide a personalized, scaffolded goal-setting experience</p>
-            </div>
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">To afford new ways of connecting learners with each other</p>
+        <div class="project-goal">
+            <p>With 101 million enrollments in 2018, massive open online courses (MOOCs) have drastically increased access to online learning resources. However, many challenges still exist in the MOOC space, such as <strong> high attrition rates and a sense of electronic isolation</strong>. To address these problems, we designed and developed a goal-setting web application with the following objectives:</p>
+            <div class="project-goal-container">
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-goal-setter-awareness.svg">
+                    <h3 class="h3-goal-setter">Increase Motivations</h3>
+                    <p>To increase learners’ awareness of their desired outcomes and motivations to engate with the course.</p>
+                </div>
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-goal-setter-personalization.svg">
+                    <h3 class="h3-goal-setter">Scafolding Experience</h3>
+                    <p>To provide online learners a personalized and scaffolded goal-setting experience.</p>
+                </div>
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-goal-setter-connected.svg">
+                    <h3 class="h3-goal-setter">Social Experience</h3>
+                    <p>To afford learners new ways of connecting with each other in the online learning environment.</p>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
 
-    <div class="stripe-gray">
-        <div class="section">
-            <h2>Overview</h2>
-            <p>Goal Setter Tool is a plug-in tool for Coursera, edX and FutureLearn. It gives users the options of creating a private goal, creating a group goal or joining an existing group goal by going through a light-weight goal-setting process before taking an online course. Tailored messages are also sent via emails to users at certain launch points during the course for learners to view their recent performance, editing their goals or getting engaged in group discussions.</p>
+        <!-- Tool overview -->
+        <div class="stripe-gray step-overview" >
+            <h1 class="step-header">01. Create or Join a Goal</h1>
+            <p class="text-light step-overview_intro">Learners start by going through group goals published by other learners, and have the options of either joining one or creating one by their own.</p>
+            <img class="project-header-image" src="img/image-header-goal-setter.png">
         </div>
-        <div class="section two-columns overview">
-            <div>  
-                <h3 class="text-light"> 01. Create or Join a Goal</h3>
-                <p>After confirming the email address and getting started from the landing page, users get to the Create or Join a Goal page with choices of creating a goal or joining a group goal that is already created by other users.</p>
-            </div>
-            <img src="img/placeholder_darkscreen.png">
+        <div class="stripe-white step-overview" >
+            <h1 class="step-header">02. Set up a Goal</h1>
+            <p class="text-light step-overview_intro">If users decide to create a goal by their own, they go through a five-step goal-setting process to create either a private or a group goal.</p>
+            <img class="project-header-image" src="img/image-header-goal-setter.png">
         </div>
-        <div class="section two-columns">
-            <div>  
-                <h3 class="text-light"> 02. Set up a Goal</h3>
-                <p>Then users walk through a light goal-setting process with 5 steps. For each of the step, we provide pre-populated content for users to choose, and references for users to get inspirations from.</p>
-            </div>
-            <img src="img/placeholder_darkscreen.png">
+        <div class="stripe-gray step-overview" >
+            <h1 class="step-header">03. Review Your Goal</h1>
+            <p class="text-light step-overview_intro">After setting up the goal, users could review their goal on the “My Goal” page. If learners created a group goal, they could also have online chat with other learners who join the goal.</p>
+            <img class="project-header-image" src="img/image-header-goal-setter.png">
         </div>
-        <div class="section two-columns">
-            <div>  
-                <h3 class="text-light"> 03. Review Your Goal</h3>
-                <p>After setting up the goal, users get to the "My Goal" page, on which the three cards reflect the users' previous input. For users who join or create a group goal, they will also be able to have discussions with other members of the same goal and check their profile. The goal can also be exported as a photo to share on social media.</p>
-            </div>
-            <img src="img/placeholder_darkscreen.png">
-        </div>
-    </div>
-</div>
 
+        <div class="stripe-dark"> 
+            <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">DESIGN PROCESS</h2> 
+                 <h1 class="text-white">How I proceeded</h1>
+            </div>
+            <p class="section-intro_content text-white">The full development cycle of this tool was about 4 months. The timeline below shows the primary research and design process.</p>
+           </div>
+           <div class="project-image-container">
+                <img src="img/image-goal-setter-process.png">
+            </div>
+        </div>
 <div id="research" class="container">
-    <div class="stripe-white">
-        <div class="section one-column">
-            <p class="h4">Preliminary Research</p>
-            <h2>Understand Online learning and goal-setting</h2>
-            <p>In the early stage of preliminary research, I gathered insights from colleagues in various areas, academic literature and blog posts on goal-setting and MOOC interventions. Key findings included:</p>
-            <p class="p--indent">1. Goal Setting plays a significant role in MOOC learners' success;</p>
-            <p class="p--indent">2. E-solation (electronical-isolation) is a problem for online education;</p>
-            <p class="p--indent">3. Goals can be converted into social objects for increasing motivation and accountability.</p>
+        <div class="stripe-white"> 
+            <div class="section-intro" id="overview">
+                <div class="section-intro_header">
+                    <h2 class="h2-goal-setter">RESEARCH</h2> 
+                    <h1>What's Out There</h1>
+                </div>
+           <p class="section-intro_content">I started the whole process by conducting research to understand the main pain point of online learning and how some existing tools perform.</p>
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1>01. Background Reseach</h1>
+            <p class="text-light step-overview_intro">In the early stage of preliminary research, I gathered insights from colleagues in various areas, academic literature and blog posts on goal-setting and MOOC interventions. </p>
+            <div class="research-finding-container">
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-goal-setter-finding-1.svg">
+                    <p>Goal-setting plays a significant role in MOOC learner’s success</p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-goal-setter-finding-2.svg">
+                    <p>Online education can lead students to feel "esolated" from instructional staff and classmates.</p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-goal-setter-finding-3.svg">
+                    <p>Goals can be converted into social objects to improve the motivation and accountability. </p>
+                </div>
+            </div>   
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1>02. Competitive Analysis</h1>
+            <p class="text-light step-overview_intro">Before heading to concept ideation, I started by conducting competitive analysis on goal-setting related tools and platforms, which included coach.me, DuoLingo and Coursera on their features of creating goals, tracking goals and their overall strengths and weakness.  </p>
+            <div class="project-image-container">
+                <img src="img/img-goal-setter-competitive-analysis.svg">
+            </div>
+            <div class="competitive-analysis-container">
+                <div class="competitive-analysis-item">
+                    <img class="img-competitive" src="img/icon-goal-setter-strengths.svg">
+                    <div>
+                    <h3>Common Strengths</h3>
+                    <p>They all include progress charts and email reminders as a way of motivating users and keeping track of their goals.</p>
+                </div>
+            </div>
+                <div class="competitive-analysis-item">
+                    <img class="img-competitive" src="img/icon-goal-setter-weakness.svg">
+                    <div>
+                    <h3>Common Weakness</h3>
+                    <p>They all rely on daily user input and incompatibility with the learning tools interoperability (LTI) standard.</p>
+                </div>
+            </div>
+            </div> 
+        </div>
+        </div>
+        <div id="ideation" class="container">
+        <div class="stripe-gray section-intro" id="overview">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">IDEATION</h2> 
+                 <h1>Thinking About Solutions</h1>
+            </div>
+           <p class="section-intro_content">To ideate design solutions, I organized and ran two workshops and one brainstorm session within our core team as well as across the office.</p>
+        </div>
+        <div class="stripe-gray step-overview" >
+            <h1 class="step-header">01. Personas and User Journey Map</h1>
+            <p class="text-light step-overview_intro">I started the ideation session by gathering insights from wider range of the group and taking different user personas into considerations. I designed and organized an 1-hour workshop with 6 participants, in which the group generated 12 possible personas and 3 user journey maps. Below are examples of createtd personas. </p>
+            <div class="persona-container">
+                <div class="persona-item">
+                    <img class="img-goal" src="img/image-goal-setter-persona-1.svg">
+                    <h3>Frederick Nguyen</h3>
+                    <p><em>Frederick is a 24-year-old recent college graduate student with experience in HTML and CSS. He wants to master Javascript basics without having to compelete all parts of the course.</em></p>
+                </div>
+                <div class="persona-item">
+                    <img class="img-goal" src="img/image-goal-setter-persona-2.svg">
+                    <h3>Lizzie Park</h3>
+                    <p><em>Lizzie is a 30-year-old high school teacher who wants to supplement content in the classroom, but she is unsure about the student expectations from the course.</em></p>
+                </div>
+                <div class="persona-item">
+                    <img class="img-goal" src="img/image-goal-setter-persona-3.svg">
+                    <h3>Annie Patrick</h3>
+                    <p><em>Annie is a in her 40s with family who wants career change into Data Science, but she is lacking of motivation and free time. She is unsre about the outcome and struggles with self-doubt.</em></p>
+                </div>
+            </div>
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1 class="step-header">02. Brainstorming</h1>
+            <p class="text-light step-overview_intro">Based on the previous research and persona, I led the group to brainstorm an initial set of potential features to establish a shared understanding of the project direction and ensure that selected features aligned with the overarching goals of the project. </p>
+            <div class="project-image-container">
+                <img class="image-brainstorm" src="img/image-goal-setter-brainstorm.svg">
+            </div>
+        </div>
+        <div class="stripe-gray step-overview" >
+            <h1 class="step-header">03. Lightning Design Jam</h1>
+            <p class="text-light step-overview_intro">After the first design jam and brainstorming, I found the team came to the situation of having too many ideas and found it hard to narrow down the scope. Thus, I followed the Lightning design jam process that was firstly brought up by designers from AJ & Smart, which helped me find the key pain points to focus on.</p>
+        </div>
+        <div class="stripe-gray">
+        <div class="project-image-container-small">
+            <img src="img/image-goal-setter-lightning-jam.png">
+        </div>
         </div>
 
-        <div class="section one-column">
-            <p class="h4">Competitive Analysis</p>
-            <h2>Understand the market and the competitors</h2>
-            <p>To identify possible features and ways of differentiating our application, I conducted a competitive analysis of applications that focused on or incorporated goal-setting in industry, as well as online learning. The outcome of this step is a table to compare these tools. I also found that their common strenghts included using progress charts and email reminders to help users keeping track of their goals, while their shared weaknesses included the reliance on daily user input and incompatibility with the learning tools interoperability (LTI) standard, mearning they would not seamlessly integrate with learning management systems that are used to host the MOOCs we intended to impact.</p>
-            <img src="img/placeholder_1.png">          
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Persona</p>
-            <h2>Understand the users</h2>
-            <p>MOOCs attract learners with a variety of different motivations and needs. To generate a variety of possible learner personas, I planned and organized a workshop with 6 people from our wider team, including 2 student fellows, 2 learning experience designers, 1 software developer, and 1 behavioral scientist. Below are examples of personas generated from this workshop.</p>          
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-        <p>Based on the user personas generated from this workshop, I divided our users into two general types: users who are self-motivated and users who are social intervened. This further helped me and the team to brainstorm features to target at each of these two user types.</p>
-
-        <div class="section one-column">
-            <p class="h4"> Brainstorm</p>
-            <h2> Explore possible features</h2>
-            <p>Based on our previous research, I organized the team to conduct a brainstorm session to establish a shared understanding of the project direction and ensure that selected features aligned with the overarching goals of the project. After the brainstorm, I created the sheet below that demonstrate how each of the features we brainstormed align with our overarching design goals. </p>
-            <img src="img/placeholder_1.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Lightning Design Jam</p>
-            <h2>What do we care the most</h2>
-            <p>After generating personas and brainstorming, I found that we came to the situation of having too many ideas and found it hard to narrow down the scope. Thus, I run another design workshop, following the Lightning Design Jam process that was brought up by designers from AJ & Smart that helped me found the key pain points I should focus on.</p>
-            <p>The problem we prioritized in this workshop was the potential heavy goal-setting process for learners at the beginning of the course, which was rephrased into a HMW question: <b>How might we create a lighter goal-setting process?</b></p>
-            <p>We came up with several <b>actionalbe solutions :</b></p>
-            <p class="p--indent">1. Design the UI to be more conversational, gameful and playful;</p>
-            <p class="p--indent">2. Make sure the tool is as context-aware as possible;</p>
-            <p class="p--indent">3. Provide pre-populated options.</p>
-            <img src="img/placeholder_1.png">
-        </div>
-    </div>
-    <div class="stripe-dark">
-        <div class="section one-column">
-            <h2 class="text-white">🔍 Key Findings from the Research</h2> 
-            <p class="p--indent text-white">1. Goal-setting is important for MOOCs study.</p>
-            <p class="p--indent text-white"> 2. Learners can be divided into Self-motivated and social intervened.</p>
-            <p class="p--indent text-white"> 3. Goals can be converted into social objects to increase motivation.</p>
-            <p class="p--indent text-white"> 4. The goal-setting process should be simple and light-weight.</p>
-        </div>
-
-        <div class="section one-column">
-            <h2 class="text-white">💡 What are my design decisions</h2> 
-            <h3 class="text-white">Key Feature 1 | Create a private goal</h3>
-            <p class="text-white"> For learners who are more self-motivated, the tool allows them to set up a private goal by following a scaffolded experience. We would also send email reminders at each launch point to remind learners of reflecting on their own performance.</p>
-            <h3 class="text-white">Key Feature 2 | Create or join a grivate goal</h3>
-            <p class="text-white"> For learners who are more socially intervened, the tool allows them to create or join a group goal to achieve the goal with other learners within the course. In the group goal, learners could share their thoughts through a discussion forum and check the performance of other learners. We would send out email reminders at each launch point to relect on their performance and check the dicussion forum if they want to.</p>
+        <div class="stripe-dark"> 
+            <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">KEY FINIDNGS</h2> 
+                 <h1 class="text-white">From Research to Design</h1>
+            </div>
+            <p class="section-intro_content text-white">After the initial research and ideation, I synthesized key findings from earlier steps to better instruct my later design decision.</p>
+           </div>
+           <div class="project-image-container-small">
+                <img src="img/image-goal-setter-findings.png">
+            </div>
         </div>
     </div>
 </div>
-
-
-<div id="design" class="container">
+<div id ="design" class="container">
     <div class="stripe-white"> 
-        <div class="section one-column">
-            <p class="h4">User Journey Map</p>
-            <h2>Streamline the user flow</h2>
-            <p>Having the key features decided, I streamlined the user flow by creating a user journey map of actions they take at different milestones while using the tool.</p>
-            <img src="img/placeholder_1.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Initial Sketches</p>
-            <h2>Start visualizing the interface</h2>
-            <p>based on the user journey map, I sketched the key interface of the tool</p>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h2 class="h2-goal-setter">DESIGN</h2> 
+                <h1>From Sketch to Design</h1>
             </div>
-            <div>
-                <img src="img/placeholder_3.png">
+       <p class="section-intro_content">I started the whole process by conducting research to understand the main pain point of water drinking and opportunities from exsiting products in the market.</p>
+    </div>
+    <div class="stripe-white step-overview" >
+        <h1 class="step-header">01. Initial Sketches</h1>
+        <p class="text-light step-overview_intro">I started visualizing the interfaces by sketching on paper to better streamline the flow and the relationship among pages.</p>
+        <div class="research-finding-container">
+            <img class="image-sketch" src="img/image-goal-setter-sketch-1.webp">
+            <img class="image-sketch" src="img/image-goal-setter-sketch-2.webp">
+            <img class="image-sketch" src="img/image-goal-setter-sketch-3.webp">
+        </div>
+    </div>
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">02. Wireframe</h1>
+        <p class="text-white step-overview_intro">I then created some initial wireframe and shared it with the team for feedback. A round of iteration was conducted based on the feedback, and below is one of the key iterations.</p>
+        <img src="img/image-goal-setter-wireframe.svg">
+    </div>
+    <div class="stripe-white"> 
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h1>Key Iteration/</h1>
             </div>
-            <div>
-                <img src="img/placeholder_3.png">
-            </div>
+            
+       <p class="section-intro_content">Break down the goal-setting process for a more conversational and scaffolded experience.</p>
+    </div>
+    </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-1.webp">
         </div>
-
-        <div class="section one-column">
-            <p class="h4">Wireframe</p>
-            <h2>Digitalize the interface</h2>
-            <p>I then created some initial wireframe and shared it with the team for feedback. A round of iteration was conducted based on the feedback, and below is one of the key iterations.</p>
-        </div>
-        <div class="two-columns">
-            <p><b>Key Iteration</b></p>
-            <p>Break down the goal-setting process from one-page into several steps for a more conversational and scaffolded experience.</p>
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Mid-fi Prototype</p>
-            <h2>Design to be interactive and easy-to-use</h2>
-            <p>Taking the iterated wireframes back to the team agian, I got further advice on the detail of the design. Taking the feedback, I iterated and wireframe into the mid-fi prorotype. Below are some key iterations:</p>
-        </div>
-        <div class=" section two-columns">
-            <p><b>Key Iteration 1</b></p>
-            <p>Redesigned the progress bar into a side navigation bar to make the interface more accessible, navigatable and responsive.</p>
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-        <div class="section two-columns">
-            <p><b>Key Iteration 2</b></p>
-            <p>Give learners a taste of the group goal they could join before they make the decision of whether to join a group goal or create one by their own.</p>
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Usability Test</p>
-            <h2>What do users think about the design and the concept</h2>
-            <p>We then recruited 10 participants on campus who had experience of taking MOOCs and gathered feedback to conduct further iteration on the design. After the usability test, I summarized the key findings from the perspectives of both user performance and high-level observations. I also put together and color-coded users insights toward goal-setting and general ideas about the tool for future improvements.</p>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">User Performance</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Usability Feedback</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Concept Feedback</p>
-            </div>  
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Design System</p>
-            <h2>Keep the design consistent and maintaining</h2>
-            <p>In the meantime of conducting the usability test, I started to build up the design system of the tool. Something I kept in mind while building the design system was the reusability and accessibility of the whole library.</p>
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Hi-fi Prototype</p>
-            <h2>Finalize the design based on usability test feedback</h2>
-            <p>After the usability test, I iterated the design again and applied the design system to create the hi-fi prototype. Below is the key iteration of this round.</p>
-        </div>
-        <div class="section two-columns">
-            <p><b>Key Iteration</b></p>
-            <p>Reduce the text instructions on the start page and combine the buttons for creating a goal on Create or Join a Goal page to improve the efficiency of the interface.</p>
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-2.webp">
         </div>
     </div>
 
-    <div class="stripe-gray">
-        <div class="section">
-            <h2>Responsive Design</h2>
-            <p>Before heading to the implementation, I also designed the interface of different screen sizes.</p>
-        </div>
-        <div class="section one-column">
-            <h3> Landing Page</h3>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Desktop</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Tablet</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Mobile</p>
-            </div>  
-        </div>
-
-        <div class="section one-column">
-            <h3> Create or Join a Goal Page</h3>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Desktop</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Tablet</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Mobile</p>
-            </div>  
-        </div>
-
-        <div class="section one-column">
-            <h3> Goal-setting Pages </h3>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Desktop</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Tablet</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Mobile</p>
-            </div>  
-        </div>
-
-        <div class="section one-column">
-            <h3> My Goal Page </h3>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Desktop</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Tablet</p>
-            </div>
-
-            <div>
-                <img src="img/placeholder_3.png">
-                <p class="p--small">Mobile</p>
-            </div>  
-        </div>
-        
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">03. Mid-fi Prototype</h1>
+        <p class="text-white step-overview_intro">Taking the iterated wireframes back to the team again, I got further advice on the detail of the design. Taking this feedback, I iterated the wireframe into the mid-fi prototype.</p>
+        <img src="img/image-goal-setter-mid-fi.svg">
     </div>
+    <div class="stripe-white"> 
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h1>Key Iteration/1</h1>
+            </div>
+       <p class="section-intro_content">Redesign the progress bar into a side navigation bar to make the interface more accessible and navigatable.</p>
     </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-3.webp">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-4.png">
+        </div>
     </div>
 
-    <div id="demo" class="container">
-        <div class="stripe-white">
-            <div class="section">
-            <h2>Invision Prototype</h2>
+    <div class="stripe-gray"> 
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h1>Key Iteration/2</h1>
             </div>
+       <p class="section-intro_content">Give learners a tatste of the group goal they could join before they make the decision of whether to join or create a goal.</p>
+    </div>
+    <div class="stripe-gray iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-5.webp">
         </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-6.png">
+        </div>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">04. Usability Test</h1>
+        <p class="text-white step-overview_intro">We then recruited 10 participants on campus who had experience of taking MOOCs and gathered feedback to conduct further iteration on the design. </p>
+        <div class="project-image-container-small">
+            <h3 class="text-white">User Performance</h3>
+            <img class="image-user-testing" src="img/image-goal-setter-usertesting-1.svg">
+        </div>
+        <div class="project-image-container-small">
+            <h3 class="text-white">Usability Feedback</h3>
+            <img class="image-user-testing" src="img/image-goal-setter-usertesting-2.svg">
+        </div>
+        <div class="project-image-container-small">
+            <h3 class="text-white">Concept Feedback</h3>
+            <p class="text-white"><em>(Email to request the full document of concept feedback)</em></p>
+            <img class="image-user-testing" src="img/image-goal-setter-usertesting-3.png">
+        </div>
+    </div>
+    <div class="stripe-white"> 
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h2 class="h2-goal-setter">DESIGN GUIDELINE</h2> 
+                <h1>Component Library</h1>
+            </div>
+       <p class="section-intro_content">In the meantime of conducting the usability test, I started to build up the design system of the tool. Something I kept in mind while building the design system was the reusability and accessibility of the whole library.</p>
+    </div>
+    <div class="strip-white">
+        <div class="guideline-image-container">
+            <img class="image-guideline" src="img/guideline-1.png">
+            <img class="image-guideline"src="img/guideline-2.png">
+            <img class="image-guideline"src="img/guideline-3.png">
+            <img class="image-guideline"src="img/guideline-4.png">
+            <img class="image-guideline"src="img/guideline-5.png">
+            <img class="image-guideline"src="img/guideline-6.png">
+        </div>
+    </div>
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">05. Hi-fi Prototype</h1>
+        <p class="text-white step-overview_intro">After the usability test, I iterated the design again and applied the design system to create the hi-fi prototype. Below is the key iteration of this round. </p>
+    <img src="img/image-goal-setter-hi-fi.svg">
+    </div>
+    <div class="stripe-white"> 
+        <div class="section-intro" id="overview">
+            <div class="section-intro_header">
+                <h1>Key Iteration/</h1>
+            </div>
+       <p class="section-intro_content">Reduce the text on the start page and combine the buttons for creating a goal on Create or Join a Goal page.</p>
+    </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-6.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-iteration" src="img/image-goal-setter-iteration-7.png">
+        </div>
+    </div>
+
+    <div class="stripe-gray section-intro" id="overview">
+        <div class="section-intro_header">
+             <h2 class="h2-goal-setter">DESIGN</h2> 
+             <h1>Design Details</h1>
+        </div>
+    </div>
+    <div class="stripe-gray step-overview">
+        <h1 class="step-header">01. Create or Join a Goal</h1>
+        <p class="step-overview_intro">Users start by creating a goal or joining a group goal that is already created by other users.</p>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-detail-1.png">
+        </div>
+    </div>
+    <div class="stripe-white step-overview">
+        <h1 class="step-header">02. Set up a Goal</h1>
+        <p class="step-overview_intro">Users walk through a light goal-setting process with 5 steps. The scafolding experience guide users to set up a smart goal for themselves.</p>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-detail-2.png">
+        </div>
+    </div>
+    <div class="stripe-gray step-overview">
+        <h1 class="step-header">03. Create or Join a Goal</h1>
+        <p class="step-overview_intro">After setting up the goal, users get to the “My Goal” page, where they could see and reflect on the goal they set for themselves. For group goals, there is also a discussion forum for learners to communicate with others who share the same goal.</p>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-detail-3.png">
+        </div>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">05. Responsive Design</h1>
+        <p class="text-white step-overview_intro">To ensure users have the best user experience on different sizes of devices, I also created the responsive design of each interfaces to adapt to different screen sizes.</p>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header-responsive">Landing Page</h1>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-responsiveness-1.png">
+        </div>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header-responsive">Create or Join a Goal Page</h1>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-responsiveness-2.png">
+        </div>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header-responsive">Goal-setting Page</h1>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-responsiveness-3.png">
+        </div>
+    </div>
+
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header-responsive">My Goal Page</h1>
+        <div class="project-image-container">
+            <img src="img/image-goal-setter-responsiveness-4.png">
+        </div>
+    </div>
+</div>
     </div>
 
     <script src="js/scroll.js"></script>

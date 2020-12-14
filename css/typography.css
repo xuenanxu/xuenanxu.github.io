@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 body {
-    font-family: "Saira Condensed", sans-serif;
+    font-family: 'Inter', sans-serif;;
 }
 
 .h1, h1 {
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1rem;
-    color: #363B3F;
+    color: #5D6168;
 
 
 }
@@ -16,14 +16,14 @@ body {
 .h2, h2 {
     font-size: 20px;
     font-weight: 500;
-    color: #363B3F;
+    color: #5D6168;
     margin-bottom: 1rem;
 }
 
 .h3, h3{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    color: #363B3F;
+    color: #5D6168;
     margin-bottom: 1rem;
 }
 
@@ -35,17 +35,17 @@ body {
 }
 
 .p, p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #363B3F;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5D6168;
     line-height: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .p--small {
-    font-size: 14px;
-    font-weight: 400;
-    color: #363B3F
+    font-size: 12px;
+    color: #5D6168;
+    font-family: 'Inter', sans-serif;;
 }
 
 .bold {
@@ -61,7 +61,7 @@ body {
 }
 
 .text-light {
-    color: #677581;
+    color: #A8ADB5;
 }
 
 .text-white {

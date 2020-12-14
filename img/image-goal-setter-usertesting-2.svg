@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="824px" height="371px" viewBox="0 0 824 371" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy 4</title>
+    <g id="Artboard-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="824" height="371"></rect>
+        <g id="Group" transform="translate(0.000000, 1.000000)">
+            <path d="M3,0 L821,0 C822.656854,-3.04359188e-16 824,1.34314575 824,3 L824,40 L824,40 L0,40 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle" fill="#FAFAFA"></path>
+            <text id="Category" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="32" y="24">Category</tspan>
+            </text>
+            <text id="Usability" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="32" y="113">Usability</tspan>
+            </text>
+            <text id="Feature" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="32" y="239">Feature</tspan>
+            </text>
+            <text id="Aesthetic" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="32" y="337">Aesthetic</tspan>
+            </text>
+            <text id="Filter" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" fill="#2C3440">
+                <tspan x="197" y="68">Filter</tspan>
+            </text>
+            <text id="U1:-(Create-or-join" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" line-spacing="15" fill="#2C3440">
+                <tspan x="396" y="54">U1: (Create or join a goal page) This is already a fairly large number of goals. If </tspan>
+                <tspan x="396" y="69">there are more than 9, I think I might be getting lost, would want a way to sort or a </tspan>
+                <tspan x="396" y="84">filter. Such like filtering by group size, popularity, keywords, recency of activity.</tspan>
+            </text>
+            <text id="U2:-I-would-wonder-i" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" line-spacing="15" fill="#2C3440">
+                <tspan x="396" y="108">U2: I would wonder if I could edit the goal dynamically on the page.</tspan>
+                <tspan x="396" y="128">U3: It would be helpful to have a button to go back instead of just using the nav.</tspan>
+                <tspan x="396" y="148">U5: I expect there to be a back button, and to have at least 2 or more way to </tspan>
+                <tspan x="396" y="163">navigate. among steps</tspan>
+            </text>
+            <text id="U2:-Can-I-have-multi" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" line-spacing="15" fill="#2C3440">
+                <tspan x="396" y="194">U2: Can I have multiple goals?</tspan>
+                <tspan x="396" y="214">U3: Does this tool allow me to create more than one goal? It’s possible some users </tspan>
+                <tspan x="396" y="229">might want more goals supported, like they want to learn field knowledge and get </tspan>
+                <tspan x="396" y="244">more experience of working with other students who share their interests.</tspan>
+                <tspan x="396" y="264">U10: Yeah, i would imagine being able to create multiple goals, I think many students </tspan>
+                <tspan x="396" y="279">do, for example, the goal of learning specific skills, or prepare before test.</tspan>
+            </text>
+            <text id="U7:-Use-a-different" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" line-spacing="15" fill="#2C3440">
+                <tspan x="396" y="309">U7: Use a different color for the call-to-action button to make it prompt more.</tspan>
+                <tspan x="396" y="329">U9: Colors on the site looks too matchy and nothing stands out.</tspan>
+            </text>
+            <text id="U1:-It’d-be-nice-to" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" line-spacing="15" fill="#2C3440">
+                <tspan x="396" y="355">U1: It’d be nice to see the images in the section- funny and cartoonish</tspan>
+            </text>
+            <text id="Edit" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" fill="#2C3440">
+                <tspan x="197" y="137">Edit</tspan>
+            </text>
+            <text id="Number-of-goal(s)" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" fill="#2C3440">
+                <tspan x="197" y="239">Number of goal(s)</tspan>
+            </text>
+            <text id="Color-palette" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" fill="#2C3440">
+                <tspan x="197" y="317">Color palette</tspan>
+            </text>
+            <text id="Visual/Illustrations" font-family="Inter-Regular, Inter" font-size="10" font-weight="normal" fill="#2C3440">
+                <tspan x="197" y="355">Visual/Illustrations</tspan>
+            </text>
+            <text id="Key-Findings" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="197" y="24">Key Findings</tspan>
+            </text>
+            <text id="Detail" font-family="Inter-Regular_Medium, Inter" font-size="10" font-weight="400" fill="#2C3440">
+                <tspan x="396" y="24">Detail</tspan>
+            </text>
+            <line x1="0.5" y1="174.5" x2="824.5" y2="174.5" id="Line-5" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="0.5" y1="39.5" x2="824.5" y2="39.5" id="Line-5-Copy-4" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="0.5" y1="293.5" x2="824.5" y2="293.5" id="Line-5-Copy-2" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="0.5" y1="369.5" x2="824.5" y2="369.5" id="Line-5-Copy-3" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="355.5" y1="0.402173913" x2="355.5" y2="369.633672" id="Line-8" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="168.5" y1="0.402173913" x2="168.5" y2="369.633672" id="Line-8-Copy" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="168.5" y1="93.5" x2="824.5" y2="93.5" id="Line-9" stroke="#EBEEF5" stroke-linecap="square"></line>
+            <line x1="168.5" y1="338.5" x2="824.5" y2="338.5" id="Line-9-Copy-8" stroke="#EBEEF5" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>
