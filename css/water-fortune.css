@@ -1,0 +1,68 @@
+.step-overview-water {
+    align-items: center;
+    text-align: center;
+    padding: 40px 15%;
+}
+
+.step-overview-water_intro {
+    margin: 30px auto;
+    width: 50%;
+}
+.stripe-water-blue {
+    background-color: #5DA6FA;
+}
+
+.project-goal-container-water {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 15%;
+}
+
+
+.h2-water {
+    font-size: 12px;
+    align-items: baseline;
+    color: #5DA6FA;
+}
+.h3-water{
+    color: #5DA6FA;
+}
+
+
+.bct-container {
+    padding: 20px 15% 40px 15%;
+}
+.bct-item {
+    width: 100%;
+    border-radius:5px;
+    padding: 20px 20px 5px 20px;
+    text-align: left;
+    align-items: left;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 15px;
+}
+
+.bct-1 {
+    border-left: 5px solid #FFD15C;
+}
+
+.bct-2 {
+    border-left: 5px solid #FFC380;
+}
+
+.bct-3 {
+    border-left: 5px solid #F2ABBA;
+}
+
+.bct-4 {
+    border-left: 5px solid #25CBAB;
+}
+
+.bct-5 {
+    border-left: 5px solid #5DA6FA;
+}
+
+.image-water-fortune-guideline {
+    margin-bottom: 60px;
+}

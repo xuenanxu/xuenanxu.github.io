@@ -67,3 +67,7 @@ body {
 .text-white {
     color:#EBEEF5
 }
+
+strong {
+    font-weight: 500;
+}
