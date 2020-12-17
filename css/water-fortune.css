@@ -1,3 +1,7 @@
+.water-fortune-tool {
+    padding-top: 60px;
+    align-items: center;
+}
 .step-overview-water {
     align-items: center;
     text-align: center;
@@ -9,7 +13,7 @@
     width: 50%;
 }
 .stripe-water-blue {
-    background-color: #5DA6FA;
+    background-color: #7BB3F3;
 }
 
 .project-goal-container-water {
@@ -65,4 +69,36 @@
 
 .image-water-fortune-guideline {
     margin-bottom: 60px;
+}
+
+
+.invision-water-fortune{
+    height: 550px;
+    margin-top: 80px;
+}
+
+.invision-water-fortune > iframe {
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    top: -250px;
+    height: 900px;
+    display: table;
+    margin: 0 auto;
+}
+
+.water-tool-demo {
+    height: 650px;
+    text-align: center;
+    align-items: center;
+}
+
+.water-tool-demo > iframe {
+    position: relative;
+    top: -150px;
+}
+
+.image-water-sketch {
+    width: 22%;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
 }

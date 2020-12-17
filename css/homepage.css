@@ -1,10 +1,21 @@
 .home-header-container{
     display: flex;
-    width: 30%;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    margin: 200px auto 100px auto;
+    align-items: center;
+    text-align: center;
+    margin: 150px auto 50px auto;
+}
+
+.home-header-container > h1 {
+    line-height: 4rem;
+}
+
+
+.home-header-container > img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .typewriter { 
@@ -33,46 +44,47 @@
 .work-container {
     display: flex;
     flex-direction: row;
-    margin: 150px 100px;
+    margin: 30px 15%;
     justify-content: space-between;
     flex-wrap: nowrap;
+    height: 300px;
+    align-items: center;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.work-container:hover {
+    box-shadow:0 3px 25px 0 rgba(0, 0, 0, 0.06);
+    transform: scale(1.01) !important;
+    transition: .3s ease-in-out !important;
 }
 
 .work-container .work-intro {
     width: 40%;
+    padding: 0 100px 0 100px;
 }
 
-.work-container .work-intro p {
-    margin-bottom: 40px;
+.work-container .work-intro-reversed {
+    width: 40%;
+    padding: 0 100px 0 61% ;
 }
 
-.work-container .work-image{
-    margin-left: 14%;
-}
-.work-container .work-image img{
-    width: 100%;
-    margin: 0;
-    transition: .4s ease-in-out;
+.work-container .work-intro p,.work-container .work-intro-reversed p {
+    margin: 20px 0;
 }
 
-.work-container .work-image img:hover {
-    transform: scale(1.01);
-    transition: .4s ease-in-out;
-    box-shadow: 0px 1px 20px #f5f5f5;
+
+
+.work-goal-setter {
+    background-image: url("../img/image-homepage-goal-setter.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.work-container .button {
-    height: 35px;
-    padding: 5px 10px;
-    border: 1px solid #5D6168;
-    font-family: "Saira Condensed", sans-serif;
-    font-size: 16px;
-    border-radius: 1px;
-    color:#5D6168;
-}
-
-.work-container .button:hover {
-    background: #5D6168;
-    color: white;
-    transition: .2s ease-in;
+.work-water-fortune {
+    background-image: url("../img/image-homepage-water-fortune.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
