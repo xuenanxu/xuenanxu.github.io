@@ -102,3 +102,20 @@
     border-radius: 5px;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
 }
+
+.water-fortune-usability-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15% 50px 15%;
+}
+
+.image-water-fortune-usability {
+    width: 42%;
+}
+
+.image-water-iteration {
+    width: 50%;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
