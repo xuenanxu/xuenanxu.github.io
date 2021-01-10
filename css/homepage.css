@@ -7,6 +7,12 @@
     margin: 150px auto 50px auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .home-header-container{
+        width: 50%;
+    }
+}
+
 .home-header-container > h1 {
     line-height: 4rem;
 }
@@ -28,6 +34,12 @@
         blink-caret .6s step-end infinite;
 }
 
+@media only screen and (max-width: 500px) {
+    .typewriter {
+        display: none !important;
+    }
+}
+
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
@@ -44,7 +56,7 @@
 .work-container {
     display: flex;
     flex-direction: row;
-    margin: 30px 15%;
+    margin: 40px 15%;
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 300px;
@@ -61,7 +73,13 @@
 
 .work-container .work-intro {
     width: 40%;
-    padding: 0 100px 0 100px;
+    padding: 0 100px 0 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .work-container .work-intro {
+        padding: 0 100px 0 30px;
+    }
 }
 
 .work-container .work-intro-reversed {
@@ -69,10 +87,26 @@
     padding: 0 100px 0 61% ;
 }
 
+@media only screen and (max-width: 768px) {
+    .work-container .work-intro-reversed {
+    padding: 0 50px 0 55%;
+    }
+}
+
 .work-container .work-intro p,.work-container .work-intro-reversed p {
     margin: 20px 0;
 }
 
+.work-intro h1, .work-intro-reversed h1{
+    line-height:2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .work-intro h1, .work-intro-reversed h1 {
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+}
 
 
 .work-goal-setter {
@@ -87,4 +121,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.work-problem-roulette {
+    background-image: url("../img/image-homepage-problem-roulette.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.work-recommender{
+    background-image: url("../img/image-homepage-recommender.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+hr.project-header-divider {
+    width:25px;
+    border-top: 2px solid #A8ADB5;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 501px) {
+.desktop-hide, .tablet-hide {
+    display:none;
+    }
 }

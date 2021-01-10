@@ -13,52 +13,54 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/loader.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-        // $sections includes all of the container divs that relate to menu items.
-        var $sections = $('.container');
-        
-        // The user scrolls
-        $(window).scroll(function(){
-        
-        // currentScroll is the number of pixels the window has been scrolled
-        var currentScroll = $(this).scrollTop();
-        
-        // $currentSection is somewhere to place the section we must be looking at
-        var $currentSection
-        
-        // We check the position of each of the divs compared to the windows scroll positon
-        $sections.each(function(){
-            // divPosition is the position down the page in px of the current section we are testing      
-            var divPosition = $(this).offset().top;
+   
+   <script type="text/javascript">
+        $(document).ready(function(){
+            // $sections includes all of the container divs that relate to menu items.
+            var $sections = $('.container');
             
-            // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-            // the -1 is so that it includes the div 1px before the div leave the top of the window.
-            if( divPosition - 80 < currentScroll ){
-            // We have either read the section or are currently reading the section so we'll call it our current section
-            $currentSection = $(this);
+            // The user scrolls
+            $(window).scroll(function(){
             
-            // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-            }
+            // currentScroll is the number of pixels the window has been scrolled
+            var currentScroll = $(this).scrollTop();
             
-            // This is the bit of code that uses the currentSection as its source of ID
-            var id = $currentSection.attr('id');
-            $('a').removeClass('active');
-            $("[href=#"+id+"]").addClass('active');
+            // $currentSection is somewhere to place the section we must be looking at
+            var $currentSection
             
-        })
-    
+            // We check the position of each of the divs compared to the windows scroll positon
+            $sections.each(function(){
+                // divPosition is the position down the page in px of the current section we are testing      
+                var divPosition = $(this).offset().top;
+                
+                // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
+                // the -1 is so that it includes the div 1px before the div leave the top of the window.
+                if( divPosition - 80 < currentScroll ){
+                // We have either read the section or are currently reading the section so we'll call it our current section
+                $currentSection = $(this);
+                
+                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+                }
+                
+                // This is the bit of code that uses the currentSection as its source of ID
+                var id = $currentSection.attr('id');
+                $('a').removeClass('side-active');
+                $("[href=#"+id+"]").addClass('side-active');
+                
+            })
+        
+            });
         });
-    });
-</script>
+    </script>
 
   <style>
       body{
-          font-family: 'Poppins', sans-serif;         
+          font-family: 'Inter', sans-serif;         
       }
   </style>
 </head>
@@ -66,141 +68,175 @@
 <body>
     <nav id="sidenav" class="sidenav fade-in">
         <ul>
-            <li><a href="#overview">Project Overview</a></li>
-            <li><a href="#process">Design Process</a></li>
-            <li><a href="#demo">Tool Demo</a></li>
-
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#ideation">Ideation</a></li>
+            <li><a href="#design">Design</a></li>
         </ul>
     </nav>
 
-    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">Top</button>
-
-    <div id="navbar">
-        <a href="index.html" class="h3">Xuenan Xu</a>
-        <nav>
-            <a href="index.html"> Work </a>
-            <a href="fun.html"> Fun </a>
-            <a href="about.html"> About </a>
-            <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
-        </nav>
-    </div>
-
-    <div class="project-header-light">
-        <div>
-            <h1 class="text-white"> Recommender</h1>
-            <p class="text-light p--small">UX Design & Research</p>
-            <p>A web-based application that recommends learners actions they could take after an online course, based on learners' answers of the follow-up survey after each unit of the course.</p>
-        </div>
-        <img src="img/cover_desktop_dark.png">
-    </div>
-
-    <div id="overview" class="container">
-    <div class="stripe-gray">
-        <div class="section two-columns">
-            <div>
-                <h3 class="text-light">👩🏻‍💻 Responsibilities Highlight</h3>
-                <p>Literature Research, Ideation, Wireframing, Prototyping, Conducting usability test</p>
-            </div>
-            <div>
-                <h3 class="text-light">🛠️ Tool/Language</h3>
-                <p>Sketch & Invision for prototyping</p>
-            </div>    
-        </div>
-        <div class="section  one-column">
-            <h3 class="text-light">🗓️ Design Process</h3>
-            <img src="img/placeholder_1.png">
-        </div>
-    </div>
-
-    <div class="stripe-white">
-        <div class="section">
-            <h2>Design Challenge</h2>
-            <p>"Having a 'Call to Action' is a key component of the Teach-Out ( What is a Teach-Out? )  model. If Teach-Outs topics stem from complex problems worth solving, then we need to offer learners a viable path to action. We typically recommend multiple 'Call to Actions' depending on what the topic lends itself to. However, 'Call to Actions' are not tailored to the individual in a meaningful way and might not be as actionable as we would like. In some of the Teach-Outs, it’s currently difficult to recommend a single 'Call to Action' without assuming a learner’s opinions or level of motivation."</p>
-        </div>
-    </div>
-
-    <div class="stripe-gray">
-        <div class="section">
-            <h2>Overview</h2>
-            <p>Recommender Tool is an external tool that is plugged into Coursera for Michigan. It walks learners through a series of prompts/questions to narrow down the potential actions one can take to impact the subject at hand, and ultimately present them with something they can commit to doing. </p>
-        </div>
-        <div class="section two-columns overview">
-            <div>  
-                <h3 class="text-light"> 01. Onboarding Users</h3>
-                <p>Provide learners with the onboarding instructions when they are redirected to the tool for the first time.</p>
-            </div>
-            <img src="img/cover_desktop_dark.png" width="40">
-        </div>
-        <div class="section two-columns overview">
-            <div>  
-                <h3 class="text-light"> 02. Take the Survey</h3>
-                <p>Learner take a survey of 1-3 questions after finishing each course unit.</p>
-            </div>
-            <img src="img/cover_desktop_dark.png">
-
-        </div>
-        <div class="section two-columns overview">
-            <div>  
-                <h3 class="text-light"> 03. Get Recommendations</h3>
-                <p>At the end of the course, learners will be recommended of actions they could take in the future.</p>
-            </div>
-            <img src="img/cover_desktop_dark.png">
-        </div>
-
-</div>
-
-<div id="process" class="container">
-    <div class="stripe-white">
-        <div class="section one-column">
-            <p class="h4">Competitive Analysis</p>
-            <h2>Understand the market</h2>
-            <p>With a clear design requirement, for the research phase, I primarily conducted a comparative analysis of several popular form/survey tool in the market to analyze the strengths of the existed tools and identify the key components and features of these tools. </p>
-        </div>
-        <div class="section two-columns">                        
-            <img src="img/placeholder_1.png">                        
-            <img src="img/placeholder_1.png">
-        </div>
-
-
-        <div class="section">
-            <p class="h4">Competitive Analysis</p>
-            <h2>Understand the market</h2>
-            <p>Being a pervasive problem as dehydration, there are a lot of water reminder applications in the market aiming at encouraging people to drink enough water. I conducted a competitive analysis of 4 of them, mainly to research on their strengths and weaknesses. Insights from the competitive analysis include:​​</p>
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Wireframe & Lo-fi Prototype</p>
-            <h2>Visualize the key interfaces and interactions</h2>
-            <p>Based on the ideation of key components and elements of the tool, I started from wireframing and creating the lo-fi prototype that shows the basic user flow of the tool as well as interfaces for different types of questions.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Design System</p>
-            <h2>To ensure a consistent design</h2>
-            <p>Before heading to the hi-fi prototype, I created the design system of the app to ensure the consistency of the design and establish the branding of the product.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Hi-fi Prototype</p>
-            <h2>Create a playful and easy-to-use prototype</h2>
-            <p>Carrying the feedback from my mentor after sharing my initial lo-fi design of the tool, I iterated on the design and applied the design guideline to create the hi-fi prototype. I then took the design to 3 users for the usability test. </p>
-            <img src="/img/placeholder_1.png">
-        </div>
-    </div>
-</div>
-
-<div id="demo" class="container">
-    <div class="stripe-gray">
-        <div class="section">
-        <h2>Invision Prototype</h2>
-        </div>
-    </div>
-</div>
+    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">☝🏻</button>
     
 
-<script src="js/scroll.js"></script>
+   <div id="navbar">
+            <a href="index.html" class="h3">Xuenan Xu</a>
+            <nav>
+                <a href="index.html"> Work </a>
+                <a href="fun.html"> Fun </a>
+                <a href="about.html"> About </a>
+                <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
+            </nav>
+    </div>
+
+
+
+    <div class="project-header">
+        <div class="project-header-intro">
+            <h1> Recommender </h1>
+            <p> Recommend learners actions they could take after an online Teach-Out course for continuing learning experience.</p>
+
+            <div class="project-header-role">
+                <hr class='project-header-divider'>
+                 <p class="text-light">UX/UI Design</p>
+            </div>
+        </div>         
+            <img class="project-header-image" src="img/image-cover-recommender.png">
+    </div>
+
+    <div class="project-content-container">
+
+        <!-- Overview -->
+        <div id="overview" class="container">
+        <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">INTRODUCTION</h2> 
+                 <h1>Overview</h1>
+            </div>
+           <p class="section-intro_content">Recommender Tool is a web-based product that serves as recommending learners actions they could take after a Teach-Out course on Coursera for Michigan, based on learners' answers of the follow-up survey after each unit of the course.</p>
+        </div>
+        <div class="project-goal">
+            <div class="project-goal-container">
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-recommender-background.svg">
+                    <h3 class="h3-goal-setter">Background</h3>
+                    <p>Teach-Outs are topic and discussion based online courses. To encourage learners’ continuing learning experience, we recommend multiple actions depnding on what the topic lends iteself to.</p>
+                </div>
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-recommender-problem.svg">
+                    <h3 class="h3-goal-setter">Design Problem</h3>
+                    <p>Actions we recommend are not tailored to the individual in a meaningful way and might not be as actionable as we would like, and it’s difficult to recommend an action without assuming a learner’s opinions or level of motivation.</p>
+                </div>
+                <div class="project-goal-item">
+                    <img class="img-goal" src="img/icon-goal-setter-finding-1.svg">
+                    <h3 class="h3-goal-setter">Design Goal</h3>
+                    <p>To design and develop a light-weight web application to be plugged into online courses, to help us know more about learners’ opinions on the topic, and assist recommend learners tailored actions in a meaningful way.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<div id="research" class="container">
+        <div class="stripe-gray"> 
+            <div class="section-intro">
+                <div class="section-intro_header">
+                    <h2 class="h2-goal-setter">RESEARCH</h2> 
+                    <h1>Competitive Analysis</h1>
+                </div>
+           <p class="section-intro_content">I started the whole process by conducting competitive analysis to generate the key components and elements of a survey tool.</p>
+        </div>
+        <div class="stripe-gray step-overview" >
+            <div class="project-image-container">
+                <img class="image-brainstorm" src="img/image-recommender-competitive-analysis.png">
+            </div>
+        </div>
+        </div>
+
+        <div id="ideation" class="container">
+        <div class="stripe-white section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-goal-setter">IDEATION</h2> 
+                 <h1>Thinking About Solutions</h1>
+            </div>
+           <p class="section-intro_content">To ideate design solutions, I organized and ran two workshops and one brainstorm session within our core team as well as across the office.</p>
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1 class="step-header">01. Brainstorm Features</h1>
+            <p class="text-light step-overview_intro">Based on the previous research and persona, I led the group to brainstorm an initial set of potential features to establish a shared understanding of the project direction and ensure that selected features aligned with the overarching goals of the project. </p>
+            <div class="project-image-container">
+                <img class="image-brainstorm" src="img/image-recommender-brainstorm.png">
+            </div>
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1 class="step-header">02. User Flow</h1>
+            <p class="text-light step-overview_intro">Based on the previous research and persona, I led the group to brainstorm an initial set of potential features to establish a shared understanding of the project direction and ensure that selected features aligned with the overarching goals of the project. </p>
+            <div class="project-image-container-small">
+                <img src="img/image-recommender-user-flow.svg">
+            </div>
+        </div>
+    </div>
+</div>
+<div id ="design" class="container">
+    <div class="stripe-dark"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h2 class="h2-goal-setter">DESIGN</h2> 
+                <h1 class="text-white">Wireframes</h1>
+            </div>
+       <p class="section-intro_content text-white">I started the whole process by conducting research to understand the main pain point of water drinking and opportunities from exsiting products in the market.</p>
+    </div>
+    <img src="img/image-recommender-wireframe.svg">
+    </div>
+
+    <div class="stripe-white"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h2 class="h2-goal-setter">DESIGN GUIDELINE</h2> 
+                <h1>Component Library</h1>
+            </div>
+       <p class="section-intro_content">In the meantime of conducting the usability test, I started to build up the design system of the tool. Something I kept in mind while building the design system was the reusability and accessibility of the whole library.</p>
+    </div>
+    <div class="strip-white">
+        <div class="project-image-container">
+            <img src="img/image-recommender-design-guideline.svg">
+        </div>
+    </div>
+   <div class="stripe-dark"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h2 class="h2-goal-setter">DESIGN</h2> 
+                <h1 class="text-white">Final Design</h1>
+            </div>
+        <p class="section-intro_content text-white">I started the whole process by conducting research to understand the main pain point of water drinking and opportunities from exsiting products in the market.</p>
+        </div>
+        <div class="project-detail-container">
+            <img class="image-brainstorm" src="img/image-recommender-final-design-1.svg">
+        </div>
+    </div>
+    <div class="stripe-white">
+        <div class="project-detail-container">
+            <img class="image-brainstorm" src="img/image-recommender-final-design-2.svg">
+        </div>
+    </div>
+
+    <div class="stripe-dark">
+        <div class="project-detail-container">
+            <img class="image-brainstorm" src="img/image-recommender-final-design-3.svg">
+        </div>
+    </div>
+
+    <div class="stripe-white">
+        <div class="project-detail-container">
+            <img class="image-brainstorm" src="img/image-recommender-final-design-4.svg">
+        </div>
+    </div>
+
+    <div class="stripe-dark">
+        <div class="project-detail-container">
+            <img class="image-brainstorm" src="img/image-recommender-final-design-5.svg">
+        </div>
+    </div>
+
+    <script src="js/scroll.js"></script>
 </body>
 
 

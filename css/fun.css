@@ -7,6 +7,11 @@
     margin: 150px auto 50px auto;
 }
 
+@media only screen and (max-width: 1024px) {
+    .photo-header-container {
+        width: 50%;
+    }
+}
 .typewriter { 
     overflow: hidden;
     padding-right: 5px;
@@ -42,10 +47,23 @@
     width: 90%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .photo-intro {
+        display: none;
+    }
+}
+
 .photo-container .photo-image{
     margin-left: 5%;
-
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .photo-container .photo-image {
+        margin-left: 0;
+    }
+}
+
 .photo-container .photo-image img{
     width: 100%;
     margin: 0;
@@ -66,9 +84,23 @@
     width: 90%;
 }
 
+
+@media only screen and (max-width: 1024px) {
+    .photo-intro {
+        display: none;
+    }
+}
+
 .photo-container-reverse .photo-image{
     margin-right: 5%;
 }
+
+@media only screen and (max-width: 1024px) {
+    .photo-container-reverse .photo-image{
+        margin-right: 0;
+    }
+}
+
 .photo-container-reverse .photo-image img{
     width: 100%;
     margin: 0;

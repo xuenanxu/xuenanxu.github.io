@@ -4,98 +4,206 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Xuenan Xu</title>
+  <title>Work | Problem Roulette</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <meta name="description" content="Xuenan Xu Portfolio">
   <meta name="Xuenan Xu" content="SitePoint">
 
 
-
-  <link rel="stylesheet" href="css/homepage.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/global.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/loader.css">
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+   
+   <script type="text/javascript">
+        $(document).ready(function(){
+            // $sections includes all of the container divs that relate to menu items.
+            var $sections = $('.container');
+            
+            // The user scrolls
+            $(window).scroll(function(){
+            
+            // currentScroll is the number of pixels the window has been scrolled
+            var currentScroll = $(this).scrollTop();
+            
+            // $currentSection is somewhere to place the section we must be looking at
+            var $currentSection
+            
+            // We check the position of each of the divs compared to the windows scroll positon
+            $sections.each(function(){
+                // divPosition is the position down the page in px of the current section we are testing      
+                var divPosition = $(this).offset().top;
+                
+                // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
+                // the -1 is so that it includes the div 1px before the div leave the top of the window.
+                if( divPosition - 80 < currentScroll ){
+                // We have either read the section or are currently reading the section so we'll call it our current section
+                $currentSection = $(this);
+                
+                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+                }
+                
+                // This is the bit of code that uses the currentSection as its source of ID
+                var id = $currentSection.attr('id');
+                $('a').removeClass('side-active');
+                $("[href=#"+id+"]").addClass('side-active');
+                
+            })
+        
+            });
+        });
+    </script>
+
+  <style>
+      body{
+          font-family: 'Inter', sans-serif;         
+      }
+  </style>
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="index.html" class="h3">Xuenan Xu</a>
-        <nav>
-            <a href="#" class="active"> Work </a>
-            <a href="fun.html"> Fun </a>
-            <a href="about.html"> About </a>
-            <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
-        </nav>
+    <nav id="sidenav" class="sidenav fade-in">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#ideation">Ideation</a></li>
+            <li><a href="#design">Design</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">☝🏻</button>
+    
+
+   <div id="navbar">
+            <a href="index.html" class="h3">Xuenan Xu</a>
+            <nav>
+                <a href="index.html"> Work </a>
+                <a href="fun.html"> Fun </a>
+                <a href="about.html"> About </a>
+                <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
+            </nav>
     </div>
 
-    <div class="home-header-container">
-        <img src="img/icon-profile.png">
-        <h1 class="typewriter h1">👋 Hello there! This is Xuenan Xu</h1>
-        <h1 class="h1 desktop-hide tablet-hide">👋 Hello there! This is Xuenan Xu</h1>
-        <p class="text-light">As a User Experience Designer, I design to solve complex problems through concise designs</p>
+
+
+    <div class="project-header">
+        <div class="project-header-intro">
+            <h1> Problem Roulette Redesign</h1>
+            <p> Redesign the practice summary page for UX and UI improvements.</p>
+
+            <div class="project-header-role">
+                <hr class='project-header-divider'>
+                 <p class="text-light">UX/UI Redesign, Frontend Development</p>
+            </div>
+        </div>         
+            <img class="project-header-image" src="img/image-cover-problem-roulette.png">
     </div>
 
-    <div id="work">
-        <a href="goal-setter.html" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600" class="work-image work-container work-goal-setter">
-            <div class="work-intro">
-                <h1>Goal Setter</h1>
-                <p>UX Design & Research, Frontend Development</p>
+    <div class="project-content-container">
+
+        <!-- Overview -->
+        <div id="overview" class="container">
+        <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-problem-roulette">INTRODUCTION</h2> 
+                 <h1>Overview</h1>
             </div>
-        </a>
-
-        <a href="water-fortune-new.html" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600" class="work-image work-container work-water-fortune">
-            <div class="work-intro-reversed">
-                <h1 class="text-white">Water Fortune</h1>
-                <p class="text-white">UX Research, UX/UI Design </p>
-            </div>
-        </a>
-
-        <a href="problem-roulette.html" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600" class="work-image work-container work-problem-roulette">
-            <div class="work-intro">
-                <h1>Problem Roulette Redesign</h1>
-                <p>UX/UI Redesign, Frontend Development</p>
-            </div>
-        </a>
-
-
-        <a href="recommender.html" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600" class="work-image work-container work-recommender">
-            <div class="work-intro-reversed">
-                <h1 class="text-white">Recommender</h1>
-                <p class="text-white">UX Design & Research</p>
-            </div>
-        </a>
-
+           <p class="section-intro_content">Problem Roulette is a tool collaborating with faculties from schools of University of Michigan to help students study and prepare for exams by practicing exercises from previous exams. Since 2017, Problem Roulette has served over 3 million questions to over 10 thousands students across 13 courses.</p>
+        </div>
+        <div class="project-goal">
+            <p>While designing and developing new features for Problem Roulette, we also spend time iterating on the existing features to continue optimizing learners' experience and study efficiency with Problem Roulette. The task covered in this piece is to redesign the existing session summary page, the page that gives user a summary of their performance for a study session they just completed. </p>
+        </div>
+        
+        <div class="stripe-dark step-overview">
+            <h1 class="text-white">Solution Overview</h1>   
+            <p class="text-light step-overview_intro">The redesign improved the UI style and interactions of the session summary page. Click through the prototype for an overview of the new design.</p>
+        <div class="invision-problem-roulette">
+            <iframe style="transform: scale(0.7)" src="//invis.io/EHZVHXNVZQ2" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
+        </div>
 
-<script>
-    // Navbar animation
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-80px";
-    }
-    prevScrollpos = currentScrollPos;
-}
+<div id="ideation" class="container">
+        <div class="stripe-white"> 
+            <div class="section-intro">
+                <div class="section-intro_header">
+                    <h2 class="h2-problem-roulette">IDEATION</h2> 
+                    <h1>Analyzing Current Design</h1>
+                </div>
+           <p class="section-intro_content">I started the whole process by analyzing the current interface to identify where the user experience could improve and compare with the UI style of other interfaces.</p>
+        </div>
+        <div class="stripe-white step-overview" >
+            <div class="project-image-container">
+                <img src="img/image-problem-roulette-analyze.png">
+            </div>
+        </div>
+        </div>
 
-</script>
+        <div id="design" class="container">
+        <div class="stripe-gray section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-problem-roulette">DESIGN</h2> 
+                 <h1>Redesign Overview</h1>
+            </div>
+           <p class="section-intro_content">To ideate design solutions, I organized and ran two workshops and one brainstorm session within our core team as well as across the office.</p>
+        </div>
+        <div class="stripe-gray step-overview" >
+            <div class="project-image-container">
+                <img src="img/image-problem-roulette-detail-1.png">
+            </div>
+        </div>
 
-<!-- Work container animation -->
-<script>
-AOS.init();
-</script>
+        <div class="stripe-white section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-problem-roulette">DESIGN</h2> 
+                 <h1>Feature Details</h1>
+            </div>
+        </div>
 
+        <div class="stripe-white step-overview" >
+            <div class="project-image-container">
+                <h1 class="step-header">01. Filter </h1>
+                <p class="step-overview_intro">Users can select and apply multiple filters from different dimentions to the question list.</p>
+                <img src="img/image-problem-roulette-filter.png">
+            </div>
+        </div>
+
+        <div class="stripe-gray step-overview" >
+            <div class="project-image-container">
+                <h1 class="step-header">02. Sort </h1>
+                <p class="step-overview_intro">Users can sort the question list from two dimentions - question order and question text.</p>
+                <img src="img/image-problem-roulette-sort.png">
+            </div>
+        </div>
+
+        <div class="stripe-white step-overview" >
+            <div class="project-image-container">
+                <h1 class="step-header">03. Save Questions </h1>
+                <p class="step-overview_intro">Users can save and unsave the question onto their course dashboard.</p>
+                <img src="img/image-problem-roulette-save.png">
+            </div>
+        </div>
+
+        <div class="stripe-gray step-overview" >
+            <div class="project-image-container">
+                <h1 class="step-header">04. Expand the Question </h1>
+                <p class="step-overview_intro">Users can expand the quesiton card to see more detailed information, such like the average accuracy of response, their answer(s) to the question and the correct answer of the question.</p>
+                <img src="img/image-problem-roulette-expand.png">
+            </div>
+        </div>
+
+    <script src="js/scroll.js"></script>
 </body>
+
+
 
 <footer>
     <div class="social-media">
         <a href="https://www.instagram.com/xuenanx/" target="_blank">
-            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
             <title>Shape</title>
             <desc>Created with Sketch.</desc>
@@ -111,7 +219,7 @@ AOS.init();
         </svg> 
     </a>
         <a href="https://www.linkedin.com/in/xuenan-xu-a4999299/" target="_blank">
-            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
                 <title>Shape</title>
                 <desc>Created with Sketch.</desc>
@@ -126,7 +234,7 @@ AOS.init();
                 </g>
             </svg></a>
         <a href="https://dribbble.com/xuenanxu" target="_blank">
-            <svg width="18px" height="18px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
                 <title>Shape</title>
                 <desc>Created with Sketch.</desc>
@@ -142,6 +250,6 @@ AOS.init();
             </svg>
         </a>
     </div>
-    <p class="text-light"> Design & Code by Xuenan Xu © 2020</p>
+    <p class="p--small text-light"> Design & Code by Xuenan Xu © 2020</p>
 </footer>
 </html>
