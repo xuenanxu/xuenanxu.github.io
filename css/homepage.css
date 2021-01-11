@@ -13,6 +13,13 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .home-header-container h1{
+        font-size: 20px;
+        line-height: 2rem !important;
+    }
+}
+
 .home-header-container > h1 {
     line-height: 4rem;
 }

@@ -18,7 +18,7 @@
     width: 90%;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px){
     .self-intro-container .self-intro-intro{
         width: 100%;
     }
@@ -70,7 +70,7 @@
     width: 90%;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .self-intro-container-reverse .self-intro-intro{
         width: 100%;
     }

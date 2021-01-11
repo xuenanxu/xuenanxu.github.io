@@ -46,6 +46,13 @@ nav a {
     color: #677581;
 }
 
+@media only screen and (max-width: 500px){
+  nav a {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+}
+
 nav a:hover{
     color: #5D6168;
 }
