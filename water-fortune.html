@@ -13,52 +13,55 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/water-fortune.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-        // $sections includes all of the container divs that relate to menu items.
-        var $sections = $('.container');
-        
-        // The user scrolls
-        $(window).scroll(function(){
-        
-        // currentScroll is the number of pixels the window has been scrolled
-        var currentScroll = $(this).scrollTop();
-        
-        // $currentSection is somewhere to place the section we must be looking at
-        var $currentSection
-        
-        // We check the position of each of the divs compared to the windows scroll positon
-        $sections.each(function(){
-            // divPosition is the position down the page in px of the current section we are testing      
-            var divPosition = $(this).offset().top;
+   
+   <script type="text/javascript">
+        $(document).ready(function(){
+            // $sections includes all of the container divs that relate to menu items.
+            var $sections = $('.container');
             
-            // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-            // the -1 is so that it includes the div 1px before the div leave the top of the window.
-            if( divPosition - 80 < currentScroll ){
-            // We have either read the section or are currently reading the section so we'll call it our current section
-            $currentSection = $(this);
+            // The user scrolls
+            $(window).scroll(function(){
             
-            // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-            }
+            // currentScroll is the number of pixels the window has been scrolled
+            var currentScroll = $(this).scrollTop();
             
-            // This is the bit of code that uses the currentSection as its source of ID
-            var id = $currentSection.attr('id');
-            $('a').removeClass('active');
-            $("[href=#"+id+"]").addClass('active');
+            // $currentSection is somewhere to place the section we must be looking at
+            var $currentSection
             
-        })
-    
+            // We check the position of each of the divs compared to the windows scroll positon
+            $sections.each(function(){
+                // divPosition is the position down the page in px of the current section we are testing      
+                var divPosition = $(this).offset().top;
+                
+                // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
+                // the -1 is so that it includes the div 1px before the div leave the top of the window.
+                if( divPosition - 80 < currentScroll ){
+                // We have either read the section or are currently reading the section so we'll call it our current section
+                $currentSection = $(this);
+                
+                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+                }
+                
+                // This is the bit of code that uses the currentSection as its source of ID
+                var id = $currentSection.attr('id');
+                $('a').removeClass('side-active');
+                $("[href=#"+id+"]").addClass('side-active');
+                
+            })
+        
+            });
         });
-    });
-</script>
+    </script>
 
   <style>
       body{
-          font-family: 'Poppins', sans-serif;         
+          font-family: 'Inter', sans-serif;         
       }
   </style>
 </head>
@@ -66,226 +69,469 @@
 <body>
     <nav id="sidenav" class="sidenav fade-in">
         <ul>
-            <li><a href="#overview">Project Overview</a></li>
-            <li><a href="#research">Preliminary Research</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#methodology">Methodology</a></li>
             <li><a href="#ideation">Ideation</a></li>
-            <li><a href="#design">Design and Iteration</a></li>
-            <li><a href="#demo">Tool Demo</a></li>
-
+            <li><a href="#design">Design</a></li>
+            <li><a href="#demo">Demo</a></li>
         </ul>
     </nav>
 
-    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" class="fade-in" title="Go to top">☝🏻</button>
+    
 
-    <div id="navbar">
-        <a href="index.html" class="h3">Xuenan Xu</a>
-        <nav>
-            <a href="index.html"> Work </a>
-            <a href="fun.html"> Fun </a>
-            <a href="about.html"> About </a>
-            <a href="media/Xuenan Xu_Resume_2020.pdf" target="_blank"> Resume </a>
-        </nav>
+   <div id="navbar">
+            <a href="index.html" class="h3">Xuenan Xu</a>
+            <nav>
+                <a href="index.html"> Work </a>
+                <a href="fun.html"> Fun </a>
+                <a href="about.html"> About </a>
+                <a href="media/Xuenan Xu_resume_2021.pdf" target="_blank"> Resume </a>
+            </nav>
     </div>
 
-    <div class="project-header-light">
-        <div>
-            <h1 class="text-white"> Water Forune</h1>
-            <p class="text-light p--small">UX Design & Research</p>
-            <p>A mobile application designed to encourage people to drink enough water everyday and form a good water-drinking habit in a playful way.</p>
-        </div>
-        <img src="img/cover_mobile_dark.png">
+
+
+    <div class="project-header">
+        <div class="project-header-intro">
+            <h1> Water Fortune</h1>
+            <p>Encourage people to drink enough water and keep themselves hydrated throughout the day.</p>
+
+            <div class="project-header-role">
+                <hr class='project-header-divider'>
+                 <p class="text-light">UX Research, UX/UI Design</p>
+            </div>
+        </div>         
+            <img class="project-header-image" src="img/image-header-water-fortune.png">
     </div>
 
-    <div id="overview" class="container">
-    <div class="stripe-gray">
-        <div class="section two-columns">
-            <div>
-                <h3 class="text-light">👩🏻‍💻 Responsibilities Highlight</h3>
-                <p>Literature Research, Ideation, Wireframing, Prototyping, Conducting usability test</p>
+    <div class="project-content-container">
+
+        <!-- Overview -->
+        <div id="overview" class="container">
+        <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-water">INTRODUCTION</h2> 
+                 <h1>Overview</h1>
             </div>
-            <div>
-                <h3 class="text-light">🛠️ Tool/Language</h3>
-                <p>Sketch & Invision for prototyping</p>
-            </div>    
+           <p class="section-intro_content">This project targets at the pervasive problem of people’s dehydration. Our design solution is Water Fortune, a mobile application that encourages people to drink more water by customizing their daily water-intake goals, learning water-drinking tips and being motivated by unveiling a fortune cookie note when achieving the goal.</p>
         </div>
-        <div class="section  one-column">
-            <h3 class="text-light">🗓️ Design Process</h3>
-            <img src="img/placeholder_1.png">
+        </div>
+
+        <!-- Tool overview -->
+        <div class="water-fortune-tool">
+        <div class="stripe-white step-overview-water" >
+            <p><strong>FIRST STEP</strong></p>
+            <h1 class="step-header">Onboarding Process</h1>
+            <p class="text-light step-overview-water_intro">Get to know how Water Fortune works.</p>
+        </div>
+        <div class="invision-water-fortune stripe-water-blue">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/94ZT3MNCRNJ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="stripe-white step-overview-water" >
+            <p><strong>SECOND STEP</strong></p>
+            <h1 class="step-header">Customize Your Goal</h1>
+            <p class="text-light step-overview-water_intro">Tell us about yourself, customize your bottle size and get recommendations of your water daily intake.</p>
+        </div>
+        <div class="stripe-gray invision-water-fortune">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/CFW7LONYVXQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="stripe-white step-overview-water" >
+            <p><strong>THIRD STEP</strong></p>
+            <h1 class="step-header">Log Water Intake</h1>
+            <p class="text-light step-overview-water_intro">Log your water intake, learn about water-drinking tips and unveil a fortune cookie</p>
+        </div>
+        <div class="invision-water-fortune stripe-water-blue">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/KAZT3MRFED8" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="stripe-white step-overview-water" >
+            <p><strong>FOURTH STEP</strong></p>
+            <h1 class="step-header">Review Your Intake</h1>
+            <p class="text-light step-overview-water_intro">Keep track on your water-drinking performance</p>
+        </div>
+        <div class="stripe-gray invision-water-fortune">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/XEZT3MWFQVC" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="stripe-white step-overview-water" >
+            <p><strong>FIFTH STEP</strong></p>
+            <h1 class="step-header">Intelligent Notification</h1>
+            <p class="text-light step-overview-water_intro">Know the best time to drink water</p>
+        </div>
+        <div class="invision-water-fortune stripe-water-blue">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/4ZZT3MU3XSV" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+        
 
-    <div class="stripe-white">
-        <div class="section">
-            <h2>Background</h2>
-            <p>The literature research result shows that dehydration impairs people's physical and mental performances, while most of the people are not drinking enough. 75% of U.S. citizens are dehydrated. The average daily water intake is 1.8 cups, which is significantly lower than the recommended daily water intake of 8.5 cups by the European hydration institute. I targeted this problem for the severity of the current dehydration situation.</p>
-        </div>
-    </div>
-
-    <div class="stripe-gray">
-        <div class="section">
-            <h2>Overview</h2>
-            <p>Water Fortune is a mobile app that encourages people to form the habit of drinking enough water and keeping themselves hydrated by the 4 key features below.</p>
-        </div>
-        <div class="section two-columns overview-mobile">
-            <div>  
-                <h3 class="text-light"> 01. Onboarding</h3>
-                <p>Users get to know the key features of Water Fortune by going through the onboarding screens</p>
+        <div class="stripe-dark"> 
+            <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-water">DESIGN PROCESS</h2> 
+                 <h1 class="text-white">How I proceeded</h1>
             </div>
-            <img src="img/placeholder_mobile_dark.png" width="40">
-        </div>
-        <div class="section two-columns overview-mobile">
-            <img src="img/placeholder_mobile_dark.png">
-            <div>  
-                <h3 class="text-light"> 02. Customizable Goal Setting</h3>
-                <p>Users started by setting up a customizable goal based on their physicality, during which they are able to customize their own bottle size, measure the water intake with their own bottle size and be reminded of the unreasonable goal.</p>
-            </div>
-
-        </div>
-        <div class="section two-columns overview-mobile">
-            <div>  
-                <h3 class="text-light"> 03. Water Intake Logging</h3>
-                <p>Throughout the day, users log in their water intake for every bottle of water they drink. They also get to know the some water-drinking tips while realizing their drinking goal. The water intake logging will unveil a fortune cookie note.</p>
-            </div>
-            <img src="img/placeholder_mobile_dark.png">
-        </div>
-
-        <div class="section two-columns overview-mobile">
-            <img src="img/placeholder_mobile_dark.png">
-            <div>  
-                <h3 class="text-light"> 04. Water Intake Record</h3>
-                <p>Users could view their performance on drinking water on the record page and modify the physicality basics if needed.</p>
+            <p class="section-intro_content text-white">The project was a 12-week long course project. The timeline below demonstrated the full research and design process of the project.</p>
+           </div>
+           <div class="project-image-container">
+                <img class="image-user-testing" src="img/image-water-fortune-process.svg">
             </div>
         </div>
-
-        <div class="section two-columns overview-mobile">
-            <div>  
-                <h3 class="text-light"> 05. Intelligent Reminder</h3>
-                <p>The reminder doesn't bother users at the unnecessary time, but remind users of drinking water at the right time.</p>
-            </div>
-            <img src="img/placeholder_mobile_dark.png">
-        </div>
-    </div>
-</div>
-
 <div id="research" class="container">
-    <div class="stripe-white">
-        <div class="section one-column">
-            <p class="h4">Interviews</p>
-            <h2>Understand dehydration reasons from users</h2>
-            <p>By conducting 2 interviews with people who considered themselves as dehydrated, I uncovered three primary reasons for their dehydration.</p>
-            <img src="img/placeholder_1.png">
+        <div class="stripe-white"> 
+            <div class="section-intro">
+                <div class="section-intro_header">
+                    <h2 class="h2-water">RESEARCH</h2> 
+                    <h1>Gathering Information</h1>
+                </div>
+           <p class="section-intro_content">After deciding the goal of this project, we applied different research methods to better understand the main pain point of water drinking and our competitors in the market.</p>
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1>01. Interviews</h1>
+            <p class="text-light step-overview_intro">I conducted 2 interviews with people who considered themselves as dehydrated and uncovered three primary reasons for their dehydration.</p>
+            <div class="research-finding-container">
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-finding-1.svg">
+                    <h3 class="h3-water">Lacking Awareness</h3>
+                    <p>People lack the awareness of how much water they should drink to keep themselves hydrated, as well as their own dehydration level.</p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-finding-2.svg">
+                    <h3 class="h3-water">Lacking Knowledge</h3>
+                    <p>People lack the knowledge of dehydration, which results in them overlooking the habit of drinking water and the importance of keeping themselves hydrated. </p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-finding-3.svg">
+                    <h3 class="h3-water">Lacking Motivation</h3>
+                    <p>Changing behaviors and habits are usually difficult. People’s insistency and patience fade easily as the process moves forward.</p>
+                </div>
+            </div>   
+        </div>
+        <div class="stripe-white step-overview" >
+            <h1>02. Competitive Analysis</h1>
+            <p class="text-light step-overview_intro">We then conducted the competitive analysis on 4 existing products in the market that aim for changing people’s water-drinking habits, and concluded three primary findings. </p>
+            <div class="project-image-container">
+                <img class="image-iteration" src="img/image-water-fortune-competitive-analysis.svg">
+            </div>
+            <div class="research-finding-container">
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-competitive-1.svg">
+                    <p>Gamification is helpful for behavior change and increasing motivations.</p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-competitive-2.svg">
+                    <p>Users lack the concept of the daily water-intake volume recommended by the app. </p>
+                </div>
+                <div class="research-finding-item">
+                    <img class="img-finding" src="img/icon-water-fortune-competitive-3.svg">
+                    <p>All of our competitors use regular and frequent reminders, which could be bothering for users.</p>
+                </div>
+            </div>   
+            </div> 
+        </div>
+        </div>
+        <div id="methodology" class="container">
+        <div class="stripe-gray section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-water">METHODOLOGY</h2> 
+                 <h1>Behavior Change Techniques</h1>
+            </div>
+           <p class="section-intro_content">After synthesizing the research findings, we identified the behavior change techniques we learned from class that could be applied in our later design to encourage users to change their water-drinking behaviors.</p>
+        </div>
+        <div class="stripe-gray project-image-container-small" >
+            <div class="bct-item bct-1">
+                <h3>Prompt Self-monitoring on Behaviors</h3>
+                <p>The person is asked to keep a record of specific behaviors.</p>
+
+            </div>
+            <div class="bct-item bct-2">  
+            <div>
+                <h3>Provide Information about Behavior-health Link</h3>
+                <p>General information about behavior risks, for example, susceptibility to poor health outcomes or mortality risk in relation to the behavior.</p>
+            </div>
+            </div>
+            <div class="bct-item bct-3">
+                <h3>Provide Information on Consequences</h3>
+                <p>Information about the costs and benefits of action or inaction, focusing on what will happen if the person does or does not perform the behavior.</p>
+        </div>
+            <div class="bct-item bct-4">
+                <h3>Provide Feedback on Performance</h3>
+                <p>Provide data about recorded behavior or evaluating performance in relation to a set standard or others’ performance.</p>
+        </div>
+            <div class="bct-item bct-5">
+                <h3>Provide Contigent Rewards</h3>
+                <p>Praise, encouragement, or material rewards are explicitly linked to the achievement of specified behaviors.</p>
+            </div>
         </div>
 
-
-        <div class="section">
-            <p class="h4">Competitive Analysis</p>
-            <h2>Understand the market</h2>
-            <p>Being a pervasive problem as dehydration, there are a lot of water reminder applications in the market aiming at encouraging people to drink enough water. I conducted a competitive analysis of 4 of them, mainly to research on their strengths and weaknesses. Insights from the competitive analysis include:​​</p>
-        </div>
-        <div class="section three-columns">
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">Gamification is helpful for motivating users to drink more water</p>
+        <div id="ideation" class="container">
+        <div class="stripe-white"> 
+            <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-water">IDEATION</h2> 
+                 <h1>Map out Features and User Flow</h1>
             </div>
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">Users lack the concept of the recommended volume of water</p>
-            </div>
-            <div>
-                <img class="icon" src="img/placeholder_3.png">
-                <p class="p--small">All the apps use regular and frequent reminders, which are bothering for users</p>
-            </div>
-        </div>
-        <div class="section one-column">
-            <p class="h4">Literature Research</p>
-            <h2> Choose the most appropriate Behavior Change Techniques to apply</h2>
-            <p>After the research, we synthesized the key findings and picked some of the behavior change techniques to change people's behavior of drinking water.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-        </div>
-        <div class="stripe-dark">
-            <div class="section one-column">
-                <h2 class="text-white">🔍 Key Findings from the Research</h2> 
-                <p class="p--indent text-white">1. Goal-setting is important for MOOCs study.</p>
-                <p class="p--indent text-white"> 2. Learners can be divided into Self-motivated and social intervened.</p>
-                <p class="p--indent text-white"> 3. Goals can be converted into social objects to increase motivation.</p>
-                <p class="p--indent text-white"> 4. The goal-setting process should be simple and light-weight.</p>
-            </div>
-    
-            <div class="section one-column">
-                <h2 class="text-white">💡 What are my design decisions</h2> 
-                <h3 class="text-white">Key Feature 1 | Create a private goal</h3>
-                <p class="text-white"> For learners who are more self-motivated, the tool allows them to set up a private goal by following a scaffolded experience. We would also send email reminders at each launch point to remind learners of reflecting on their own performance.</p>
-                <h3 class="text-white">Key Feature 2 | Create or join a grivate goal</h3>
-                <p class="text-white"> For learners who are more socially intervened, the tool allows them to create or join a group goal to achieve the goal with other learners within the course. In the group goal, learners could share their thoughts through a discussion forum and check the performance of other learners. We would send out email reminders at each launch point to relect on their performance and check the dicussion forum if they want to.</p>
+            <p class="section-intro_content">We then brainstormed the primary features and mapped out the user flow of the app.</p>
+           </div>
+           <div class="project-image-container">
+                <img src="img/image-water-fortune-flow.svg">
             </div>
         </div>
     </div>
+        
+<div id ="design" class="container">
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h2 class="h2-water">DESIGN</h2> 
+                <h1>From Sketch to Design</h1>
+            </div>
+       <p class="section-intro_content">The design process started from sketches of gamification ideas, and took several rounds of iterations from wireframes to hi-fi prototypes based on the feedback from in-class usability test. </p>
+    </div>
+    <div class="stripe-gray step-overview" >
+        <h1 class="step-header">01. Sketches</h1>
+        <p class="text-light step-overview_intro">Gamification is something we want to add onto the app to encourage motivations. Thus, thinking about an innovative and useful way of involving gamification was our first step.</p>
+        <div class="sketch-container">
+            <img class="image-water-sketch" src="img/image-water-fortune-sketch-1.png">
+            <img class="image-water-sketch" src="img/image-water-fortune-sketch-2.png">
+            <img class="image-water-sketch" src="img/image-water-fortune-sketch-3.png">
+            <img class="image-water-sketch" src="img/image-water-fortune-sketch-4.png">
+        </div>
+    </div>
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">02. Wireframe</h1>
+        <p class="text-white step-overview_intro">After deciding on borrowing the concept of fortune cookie notes, we created the initial wireframes of the key interface.</p>
+        <img src="img/image-water-fortune-wireframe.svg">
+    </div>
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Usability Test</h1>
+            </div>    
+           <p class="section-intro_content">After designing the wireframes, we conducted a round of in-class usability test to get feedback on the usability and concept of the initial design.</p>
+        </div>
+        <div class="water-fortune-usability-container">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-1.svg">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-2.svg">
+        </div>
+        <div class="water-fortune-usability-container">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-3.svg">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-4.svg">
+        </div>
+    </div>
 
-<div id="ideation" class="container">
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">03. Mid-fi Prototype</h1>
+        <p class="text-white step-overview_intro">Taking the feedback from the usability test, we iterated on the wireframes into mid-fi prototype to further improve the usability of our app.</p>
+        <img src="img/image-water-fortune-mid-fi.svg">
+    </div>
+    <div class="stripe-white"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/1</h1>
+            </div>
+       <p class="section-intro_content">Redesigned the interaction of adjusting the recommended goal for more flexibility.</p>
+    </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-b1.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a1.png">
+        </div>
+    </div>
+
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/2</h1>
+            </div>
+       <p class="section-intro_content">Redesigned the interation of choosing bottle size by providing options users could directly select from.</p>
+    </div>
+    <div class="stripe-gray iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-b2.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a2.png">
+        </div>
+    </div>
+
+    <div class="stripe-white"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/3</h1>
+            </div>
+       <p class="section-intro_content">Redesigned the information structure and layout of the water-logging interface for better readability.</p>
+    </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-b3.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a3.png">
+        </div>
+    </div>
+
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/4</h1>
+            </div>
+       <p class="section-intro_content">Redesigned the profile page by removing the archived fortune notes.</p>
+    </div>
+    <div class="stripe-gray iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-b4.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a4.png">
+        </div>
+    </div>
+
+    <div class="stripe-white"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Usability Test</h1>
+            </div>    
+           <p class="section-intro_content">After the iteration on the initial wireframe, we conducted another round of in-class usability test.</p>
+        </div>
+        <div class="water-fortune-usability-container">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-5.svg">
+            <img class="image-water-fortune-usability" src="img/image-water-fortune-iteration-6.svg">
+        </div>
+    </div>
+
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h2 class="h2-water">DESIGN GUIDELINE</h2> 
+                <h1>Component Library</h1>
+            </div>
+       <p class="section-intro_content">Before creating hi-fi prototype, I created a brief design guideline of the app that defines the color palette, typography and the main components. </p>
+    </div>
+    </div>
     <div class="stripe-gray">
-        <div class="section one-column">
-            <p class="h4">Brainstorm and sketching</p>
-            <h2>Explore different design ideas</h2>
-            <p>I then brainstormed several solutions in terms of the media, and ways of gamification to reward people. Considering the feasibility, and also considering the smartphone to be the most pervasive media, I chose a mobile phone as the primary media and decided to design a mobile application.</p>
-            <img src="/img/placeholder_1.png">
+        <div class="project-image-container">
+            <img class="image-water-fortune-guideline" src="img/img-water-fortune-guideline.png">
         </div>
     </div>
-</div>
 
-<div id="design" class="container">
-    <div class="stripe-white">
-        <div class="section one-column">
-            <p class="h4">Lo-fi Prototype</p>
-            <h2>Visualize the key interfaces and interactions</h2>
-            <p>After streamlining the general user flow and brainstorming potential features based on the previous research, I created the lo-fi prototype for the key interfaces.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-
-        <div class="section">
-            <p><b>Key Iteration 1 | Customizable Goal</b></p>
-            <p>The customizable goal is an important feature where users get the awareness of the best amount of water they should daily intake. The flexibility should also be provided based on users own needs, but if the goal is inappropriate, users should be reminded. I also iterated on the UI elements and visual representatives for more friendly user experience.</p>
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-
-        <div class="section">
-            <p><b>Key Iteration 2 | Water Intake Logging</b></p>
-            <p>Water Intake Logging is the most important page where users take the record of their daily water intake and being motivated by the reward I provide. Thus, it's essential to keep the logging process easy and intuitive as well as rewarding users in an efficient way. Based on the two rounds of user testing, I iterated on the contingent reward idea from water rhythm to water fortune, and improve the overall user experience of the logging process.</p>
-        </div>
-        <div class="section two-columns">
-            <img src="img/placeholder_2.png">
-            <img src="img/placeholder_2.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Design System</p>
-            <h2>To ensure a consistent design</h2>
-            <p>Before heading to the hi-fi prototype, I created the design system of the app to ensure the consistency of the design and establish the branding of the product.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-
-        <div class="section one-column">
-            <p class="h4">Hi-fi Prototype</p>
-            <h2>Create a playful and easy-to-use prototype</h2>
-            <p>After streamlining the general user flow and brainstorming potential features based on the previous research, I created the lo-fi prototype for the key interfaces.</p>
-            <img src="/img/placeholder_1.png">
-        </div>
-    </div>
-</div>
-
-<div id="demo" class="container">
-    <div class="stripe-white">
-        <div class="section">
-        <h2>Invision Prototype</h2>
-        </div>
-    </div>
-</div>
     
 
-<script src="js/scroll.js"></script>
+    <div class="stripe-dark step-overview">
+        <h1 class="text-white step-header">05. Hi-fi Prototype</h1>
+        <p class="text-white step-overview_intro">After the usability test, we iterated the design again and applied the design system to create the hi-fi prototype.</p>
+    <img src="img/image-water-fortune-hi-fi.svg">
+    </div>
+
+    <div class="stripe-gray"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/1</h1>
+            </div>
+       <p class="section-intro_content">Redesigned the interaction of adjusting the recommended goal for more flexibility and visualize the recommended water volume.</p>
+    </div>
+    <div class="stripe-gray iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a1.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a5.png">
+        </div>
+    </div>
+
+    <div class="stripe-white"> 
+        <div class="section-intro">
+            <div class="section-intro_header">
+                <h1>Key Iteration/2</h1>
+            </div>
+       <p class="section-intro_content">Redesigned and simplified the way of inputing users' own bottle size.</p>
+    </div>
+    <div class="stripe-white iteration-container">
+        <div class="iteration-item">
+            <p><em>Before</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a2.png">
+        </div>
+        <div class="iteration-item">
+            <p><em>After</em></p>
+            <img class="image-water-iteration" src="img/water-iteration-a6.png">
+        </div>
+    </div>
+
+    <div class="stripe-gray section-intro">
+        <div class="section-intro_header">
+             <h2 class="h2-water">DESIGN</h2> 
+             <h1>Design Details</h1>
+        </div>
+    </div>
+    <div class="stripe-gray step-overview">
+        <h1 class="step-header">01. Input Basics</h1>
+        <p class="step-overview_intro">Users are asked some basics such like gender, weight, activity level and weather, which are related to their daily water intake customization.</p>
+        <div class="project-image-container">
+            <img src="img/image-water-fortune-detail-1.png">
+        </div>
+    </div>
+    <div class="stripe-white step-overview">
+        <h1 class="step-header">02. Choose Bottle Size</h1>
+        <p class="step-overview_intro">Water Fortune also asks users the bottle size to better quantify and measure the recommended water intake.</p>
+        <div class="project-image-container">
+            <img src="img/image-water-fortune-detail-2.png">
+        </div>
+    </div>
+    <div class="stripe-gray step-overview">
+        <h1 class="step-header">03. Customizable Goal</h1>
+        <p class="step-overview_intro">The app recommend users their daily water intake based on their basics, which is measured with users’ own bottle sizes.</p>
+        <div class="project-image-container">
+            <img src="img/image-water-fortune-detail-3.png">
+        </div>
+    </div>
+
+    <div class="stripe-white step-overview">
+        <h1 class="step-header">04. Log Water Intake</h1>
+        <p class="step-overview_intro">Users log their water intake to reveal a fortune cookie note when reaching the goal.</p>
+        <div class="project-image-container">
+            <img src="img/image-water-fortune-detail-4.png">
+        </div>
+    </div>
+    <div class="stripe-gray step-overview">
+        <h1 class="step-header">05. Review Water-drinking Performance</h1>
+        <p class="step-overview_intro">Users can always review their daily water intake performance and adjust their basics as needed.</p>
+        <div class="project-image-container">
+            <img src="img/image-water-fortune-detail-5.png">
+        </div>
+    </div>
+<div id="demo" class="container">
+    <div class="stripe-dark">
+        <div class="section-intro">
+            <div class="section-intro_header">
+                 <h2 class="h2-water">DEMO</h2> 
+                 <h1 class="text-white">Interact With the Tool</h1>
+            </div>
+            <p class="section-intro_content text-white">Below is a clickable prototype of the tool. Now you could click through to see how Water Fortune help users mainting their hydration level.</p>
+           </div>
+        <div class="water-tool-demo">
+            <iframe style="transform: scale(0.7)" width="442" height="935" src="//invis.io/3XZT3MPK5YB" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+    <script src="js/scroll.js"></script>
 </body>
 
 
