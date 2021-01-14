@@ -185,11 +185,24 @@
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+    .guideline-image-container {
+        flex-direction: column;
+    }
+}
+
 .image-guideline {
     width: 48%;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 40px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .guideline-image-container .image-guideline {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .image-user-testing {
@@ -422,10 +435,24 @@ hr.project-header-divider {
     justify-content: space-between;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .sketch-container {
+        flex-direction: column;
+    }
+}
+
 .image-sketch {
     width: 30%;
     border-radius: 5px;
     box-shadow:0 3px 15px 0 rgba(0, 0, 0, 0.06);
+}
+
+@media only screen and (max-width: 768px) {
+    .sketch-container .image-sketch {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .iteration-container {
