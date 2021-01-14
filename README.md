@@ -1,2 +1,2 @@
-https://www.xuenanxu.github.io
+https://xuenanxu.github.io
 # portfolio
