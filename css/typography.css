@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap'); */
+@font-face {
+    font-family: 'interregular';
+    src: url('css/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('css/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Open Sans',sans-serif;
 }
 
 .h1, h1 {
