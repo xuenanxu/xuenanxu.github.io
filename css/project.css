@@ -67,13 +67,11 @@
 /* Project Header */
 .project-header {
     background-color:#f9f9f9;
-    height: 500px;
-    margin-top: 60px;
+    min-height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15%;
-
+    padding: 15px 0 15px 15%;
     align-items: flex-end;
     flex-wrap: wrap;
     color:#5D6168
