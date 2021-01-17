@@ -142,6 +142,12 @@
     height: 900px;
 }
 
+.invision-goal-setter-container {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
 .invision-problem-roulette > iframe{
     position: relative;
     border-radius: 0 0 5px 5px;
@@ -149,6 +155,7 @@
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.06);
     width: 100%;
     height: 800px;
+    margin-bottom: 40px;
 }
 
  /* Project Content */
@@ -309,6 +316,10 @@ hr.project-header-divider {
     width: 52%;
     height: auto;
     margin: auto 0;
+}
+
+.goal-setter-video {
+    width: 52%;
 }
 
 @media only screen and (max-width: 768px) {
