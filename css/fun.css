@@ -116,14 +116,24 @@
     margin: 40px 15%;
 }
 
-.fun-illustration {
-    width: 30%;
-    height: auto;
+@media only screen and (max-width: 768px) {
+    .fun-gallery{
+        flex-direction: column;
+        margin: 0 15%;
+    }
 }
 
-.fun-illustration-large {
-    width: 48%;
-    height: auto;
+.fun-illustration {
+    width: 30%;
+    height: 100%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .fun-illustration{
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .fun-featured-illustration {

@@ -109,7 +109,7 @@
 
 .project-header-image{
     width: 52%;
-    height: auto;
+    height: 100%;
     margin: auto 0;
 }
 
@@ -312,7 +312,7 @@ hr.project-header-divider {
 
 .browser-header {
     width: 52%;
-    height: auto;
+    height: 100%;
     margin: auto 0;
 }
 
